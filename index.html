@@ -1,4 +1,24 @@
 <!DOCTYPE html>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script type="text/javascript">window.jQuery || document.write('<script src="js/jquery-1.11.2.min.js"><\/script>')</script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<script>
+  $(document).ready(function(){
+    $(".dropdown").hover(            
+    function() {
+      $('.dropdown-menu', this).css("visibility", "visible");
+      $('.dropdown-menu', this).stop( true, true ).slideDown("fast");
+      $(this).toggleClass('open');        
+    },
+    function() {
+      $('.dropdown-menu', this).stop( true, true ).slideUp("fast");
+      $(this).toggleClass('open');       
+    }
+    );
+  });
+</script>
 <html>
   <head>
     <!-- set the encoding of your site -->
@@ -22,74 +42,70 @@
             </button>
             <a class="navbar-brand" href="#">Brand</a>
           </div>
-
-           <ul class="nav navbar-nav navbar-right">
-              <li>
-                <a href="">Speakers</a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropmenuFirstAnchor" href="conference.html#mentorship">Speaker Name</a></li>
-                  <li><a href="conference.html#mentorship">Speaker Name</a></li>
-                  <li><a href="conference.html#mentorship">Speaker Name</a></li>
-                  <li><a href="conference.html#mentorship">Speaker Name</a></li>
-                  <li><a href="conference.html#mentorship">Speaker Name</a></li>
-                  <li><a href="conference.html#mentorship">Additional Speakers</a></li>
-                </ul>
-              </li>
-              <li>
-                  <a href="">Exhibits</a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropmenuFirstAnchor" href="conference.html#mentorship">Overview</a></li>
-                    <li><a href="conference.html#mentorship">Focus Areas</a></li>
+          <div class = "collapse navbar-collapse navHeaderCollapse" id="bs-example-navbar-collapse-1">
+             <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                  <a href="">Speakers</a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a class="dropmenuFirstAnchor" href="conference.html#mentorship">Speaker Name</a></li>
+                    <li><a href="conference.html#mentorship">Speaker Name</a></li>
+                    <li><a href="conference.html#mentorship">Speaker Name</a></li>
+                    <li><a href="conference.html#mentorship">Speaker Name</a></li>
+                    <li><a href="conference.html#mentorship">Speaker Name</a></li>
+                    <li><a href="conference.html#mentorship">Additional Speakers</a></li>
                   </ul>
                 </li>
-                <li>
-                  <a href="hackathon.html">Hackathon</a>
-                  <ul class="dropdown-menu">
-                    <li><a href="conference.html#mentorship">Best Overall App</a></li>
-                    <li><a href="conference.html#mentorship">Accelerator Challenges</a></li>
-                    <li><a href="conference.html#mentorship">Sponsor Challenges</a></li>
-                    <li><a href="conference.html#mentorship">Kicker Contest</a></li>
-                    <li><a href="conference.html#mentorship">Sponsor Kicker Contest</a></li>
-                    <li><a href="conference.html#mentorship">Judging Criteria</a></li>
-                    <li><a href="conference.html#mentorship">Legal</a></li>
-                  </ul>
-                </li>
-                <li>
-                  <a href="conference.html">Maker Camp Live</a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropmenuFirstAnchor" href="conference.html#mentorship">Overview</a></li>
-                    <li><a href="conference.html#speaker">Projects</a></li>
-                    <li><a href="conference.html#keynote">Safety Waiver</a></li>
-                    <li><a href="conference.html#sessions">Maker FAQ</a></li>
-                  </ul>
-                </li>
-                <li>
-                  <a href="">Challenge</a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropmenuFirstAnchor" href="conference.html#mentorship">Challenge</a></li>
-                    <li><a href="conference.html#speaker">Categories</a></li>
-                    <li><a href="conference.html#keynote">Judging</a></li>
-                    <li><a href="conference.html#sessions">Timeline</a></li>
-                    <li><a href="conference.html#sessions">Prizes</a></li>
-                    <li><a href="conference.html#sessions">Watch the Challenge</a></li>
-                  </ul>
-                </li>
-                <li>
-                  <a href="schedule.html">Schedule</a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropmenuFirstAnchor" href="conference.html#mentorship">July 15th</a></li>
-                    <li><a href="conference.html#mentorship">July 16th</a></li>
-                  </ul>
-                </li>
-                <li><a class="registerAnchor" href="register.html"><span class="registerBtn">Register</span></a></li>
-            </ul>
+                  <li class="dropdown">
+                    <a href="">Exhibits</a>
+                    <ul class="dropdown-menu dropdown-menu-right">
+                      <li><a class="dropmenuFirstAnchor" href="conference.html#mentorship">Overview</a></li>
+                      <li><a href="conference.html#mentorship">Focus Areas</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown">
+                    <a href="hackathon.html">Hackathon</a>
+                    <ul class="dropdown-menu">
+                      <li><a href="conference.html#mentorship">Best Overall App</a></li>
+                      <li><a href="conference.html#mentorship">Accelerator Challenges</a></li>
+                      <li><a href="conference.html#mentorship">Sponsor Challenges</a></li>
+                      <li><a href="conference.html#mentorship">Kicker Contest</a></li>
+                      <li><a href="conference.html#mentorship">Sponsor Kicker Contest</a></li>
+                      <li><a href="conference.html#mentorship">Judging Criteria</a></li>
+                      <li><a href="conference.html#mentorship">Legal</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown">
+                    <a href="conference.html">Maker Camp Live</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropmenuFirstAnchor" href="conference.html#mentorship">Overview</a></li>
+                      <li><a href="conference.html#speaker">Projects</a></li>
+                      <li><a href="conference.html#keynote">Safety Waiver</a></li>
+                      <li><a href="conference.html#sessions">Maker FAQ</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown">
+                    <a href="">Challenge</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropmenuFirstAnchor" href="conference.html#mentorship">Challenge</a></li>
+                      <li><a href="conference.html#speaker">Categories</a></li>
+                      <li><a href="conference.html#keynote">Judging</a></li>
+                      <li><a href="conference.html#sessions">Timeline</a></li>
+                      <li><a href="conference.html#sessions">Prizes</a></li>
+                      <li><a href="conference.html#sessions">Watch the Challenge</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown">
+                    <a href="schedule.html">Schedule</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropmenuFirstAnchor" href="conference.html#mentorship">July 15th</a></li>
+                      <li><a href="conference.html#mentorship">July 16th</a></li>
+                    </ul>
+                  </li>
+                  <li class="registerAnchor"><a href="register.html"><span class="registerBtn">Register</span></a></li>
+              </ul>
+            </div>
           </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
     </nav>
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script type="text/javascript">window.jQuery || document.write('<script src="js/jquery-1.11.2.min.js"><\/script>')</script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
   </body>
 </html>
