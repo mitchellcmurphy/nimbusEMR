@@ -6,17 +6,27 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 <script>
   $(document).ready(function(){
-    $(".dropdown").hover(            
-    function() {
-      $('.dropdown-menu', this).css("visibility", "visible");
-      $('.dropdown-menu', this).stop( true, true ).slideDown("fast");
-      $(this).toggleClass('open');        
-    },
-    function() {
-      $('.dropdown-menu', this).stop( true, true ).slideUp("fast");
-      $(this).toggleClass('open');       
-    }
-    );
+    $(".dropdown").on('mouseenter mouseleave click tap', function() {
+    //$(".dropdown").hover(function() {
+      var visibility = $('.dropdown-menu', this).css("visibility");
+      if(visibility == 'hidden'){
+        $('.dropdown-menu', this).css("visibility", "visible");
+      }
+      else{
+        $('.dropdown-menu', this).css("visibility", "hidden");
+      }
+      $(this).toggleClass('open'); 
+       //  $('.dropdown-menu', this).css("visibility", "visible");
+       //  //$('.dropdown-menu', this).toggle();
+       //  //console.log($('.dropdown-menu', this).css("visibility"));
+       //  //$('.dropdown-menu', this).stop( true, true ).slideDown("fast");
+       //  $(this).toggleClass('open');        
+       // },
+       // function() {
+       //   $('.dropdown-menu', this).css("visibility", "hidden");
+       //   //$('.dropdown-menu', this).stop( true, true ).slideUp("fast");
+       //   $(this).toggleClass('open');       
+    });
   });
 </script>
 <html>
@@ -40,7 +50,7 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">Brand</a>
+            <span><img src="images/logo.png" width="340" height="50"></span>
           </div>
           <div class = "collapse navbar-collapse navHeaderCollapse" id="bs-example-navbar-collapse-1">
              <ul class="nav navbar-nav navbar-right">
@@ -107,5 +117,8 @@
           </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
     </nav>
+    <div>
+      <span class="registerBtnBig">REGISTER NOW</span>
+    </div>
   </body>
 </html>
