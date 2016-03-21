@@ -32,6 +32,11 @@ body {
   }
 }
 
+.heroPng{
+  width: 100%;
+  height: auto;
+}
+
 .navbar-default .navbar-nav>li>a {
   color: #fff !important;
   text-shadow: none;
