@@ -1,0 +1,35 @@
+@font-face {
+  font-family: 'Omnes';
+  src: url("../fonts/Omnes_ATTW02-Italic.eot"), url("../fonts/Omnes_ATTW02-Italic.woff") format("woff"), url("../fonts/Omnes_ATTW02-Italic.ttf") format("truetype"), url("../fonts/Omnes_ATTW02-Italic.svg") format("svg");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Omnes';
+  src: url("../fonts/Omnes_ATTW02-Light.eot"), url("../fonts/Omnes_ATTW02-Light.woff") format("woff"), url("../fonts/Omnes_ATTW02-Light..ttf") format("truetype"), url("../fonts/Omnes_ATTW02-Light..svg") format("svg");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Omnes';
+  src: url("../fonts/Omnes_ATTW02-LightItalic.eot"), url("../fonts/Omnes_ATTW02-LightItalic.woff") format("woff"), url("../fonts/Omnes_ATTW02-LightItalic.ttf") format("truetype"), url("../fonts/Omnes_ATTW02-LightItalic.svg") format("svg");
+  font-weight: 300;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Omnes';
+  src: url("../fonts/Omnes_ATTW02-Medium.eot"), url("../fonts/Omnes_ATTW02-Medium.woff") format("woff"), url("../fonts/Omnes_ATTW02-Medium.ttf") format("truetype"), url("../fonts/Omnes_ATTW02-Medium.svg") format("svg");
+  font-weight: 600;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Omnes';
+  src: url("../fonts/Omnes_ATTW02.eot"), url("../fonts/Omnes_ATTW02.woff") format("woff"), url("../fonts/Omnes_ATTW02.ttf") format("truetype"), url("../fonts/Omnes_ATTW02.svg") format("svg");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Omnes';
+  src: url("../fonts/Omnes_ATTW02-MediumItalic.eot"), url("../fonts/Omnes_ATTW02-MediumItalic.woff") format("woff"), url("../fonts/Omnes_ATTW02-MediumItalic.ttf") format("truetype"), url("../fonts/Omnes_ATTW02-MediumItalic.svg") format("svg");
+  font-weight: 600;
+  font-style: italic; }

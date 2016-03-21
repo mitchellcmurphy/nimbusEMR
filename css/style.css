@@ -1,0 +1,206 @@
+@import url("fonts.css");
+
+/* Resets*/
+body, section, h1, h2, h3, h4, h5, h6, p {
+	margin: 0;
+	padding: 0;
+}
+
+/* Global Styles */
+h2 {
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+body {
+	font-family: 'Omnes';
+}
+
+a {
+	color: #009fdb;
+}
+
+p {
+	line-height: 150%;
+}
+
+
+/* Buttons */
+.button {
+	padding: 15px 30px 15px 30px;
+	border: 4px solid #000;
+	display: inline-block;
+}
+
+a.button {
+	text-transform: uppercase;
+	font-size: 16px;
+	text-decoration: none;
+}
+
+
+/* Overrides */
+
+.color-white {
+	color: #fff !important;
+}
+
+.color-blue {
+	color: #009fdb !important;
+}
+
+.color-black {
+	color: #000 !important;
+}
+
+
+/* Home */
+.hero img {
+	width: 100%;
+	display: block;
+}
+
+.intro {
+	text-align: center;
+	padding: 80px 0 80px 0;
+}
+
+.intro p{
+	padding: 0 0 20px 0;
+}
+.intro img {
+	margin: 0 auto;
+}
+
+#home .section-blue h2 {
+	text-align: center;
+	padding: 80px 0 80px 0;
+}
+
+/* Sections */
+
+	/* Section Blue */
+
+	.section-blue {
+		background-color: #009fdb;
+	}
+
+	.section-blue p, .section-blue h2, .section-blue a, .section-blue b, .section-blue i {
+		color: #fff;
+	}
+
+	.section-blue h3 {
+		color: #000;
+	}
+
+	.section-blue a{
+	}
+
+	.section-blue .button{
+		border-color: #fff;
+	}
+
+	/* Section White */
+
+	.section-white {
+		background-color: #fff;
+	}
+
+	.section-white p, .section-white h2, .section-white a, .section-white b, .section-white i {
+		color: #fff;
+	}
+
+	.section-white h3 {
+		color: #000;
+	}
+
+	.section-white a{
+	}
+
+	.section-white .button{
+		border-color: #000;
+	}
+
+	/* Section Black */
+
+	.section-black {
+		background-color: #000;
+	}
+
+	.section-black p, .section-black  h2, .section-black  a, .section-black b, .section-black i {
+		color: #009fdb;;
+	}
+
+	.section-black h3 {
+		color: #fff;
+	}
+
+	.section-black a {
+	}
+
+	.section-black .button{
+		border-color: #009fdb;
+	}
+
+	/* Sectoin Gray */
+
+	.section-gray {
+		background-color: #eeeeee;
+	}
+
+	.section-gray p, .section-gray  h2, .section-gray  a, .section-gray b, .section-gray i {
+		color: #000;
+	}
+
+	.section-gray a {
+	}
+
+	.section-gray .button{
+		border-color: #000;
+	}
+
+
+/* Grid */
+.grid {
+  display: flex;
+}
+
+.grid-cell {
+  flex: 1;
+  max-width: 400px;
+  height: 400px;
+}
+
+.grid-gutters {
+  margin: -1em 0 0 -1em;
+}
+.gird-gutters > .grid-cell {
+  padding: 1em 0 0 1em;
+}
+
+
+/* Footer */
+footer h2{
+	text-align: center;
+	padding: 80px 0 40px 0;
+}
+
+footer form {
+	text-align: center;
+	padding: 0 0 40px 0;
+}
+
+footer img {
+	display: block;
+	margin: 80px auto;
+}
+
+footer p {
+	max-width: 80%;
+	margin: 0 auto;
+	text-align: center;
+	padding: 0 0 20px 0;
+	font-size: 12px;
+}
+
+
