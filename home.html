@@ -1,7 +1,102 @@
 <!DOCTYPE html>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script type="text/javascript">window.jQuery || document.write('<script src="js/jquery-1.11.2.min.js"><\/script>')</script>
     <link rel="stylesheet" href="css/style.css">
-
+    <script>
+	  $(document).ready(function(){
+	    $(".dropdown").on('mouseenter mouseleave click tap', function() {
+	    //$(".dropdown").hover(function() {
+	      var visibility = $('.dropdown-menu', this).css("visibility");
+	      if(visibility == 'hidden'){
+	        $('.dropdown-menu', this).css("visibility", "visible");
+	      }
+	      else{
+	        $('.dropdown-menu', this).css("visibility", "hidden");
+	      }
+	      $(this).toggleClass('open'); 
+	       //  $('.dropdown-menu', this).css("visibility", "visible");
+	       //  //$('.dropdown-menu', this).toggle();
+	       //  //console.log($('.dropdown-menu', this).css("visibility"));
+	       //  //$('.dropdown-menu', this).stop( true, true ).slideDown("fast");
+	       //  $(this).toggleClass('open');        
+	       // },
+	       // function() {
+	       //   $('.dropdown-menu', this).css("visibility", "hidden");
+	       //   //$('.dropdown-menu', this).stop( true, true ).slideUp("fast");
+	       //   $(this).toggleClass('open');       
+	    });
+	  });
+	</script>
     <body id='home'>
+        <div class="navbar-header">
+          	<span class="logoSpan"><img src="images/logo.png" width="227" height="33"></span>
+          	<div id="menuIcon" onclick="animateMenuIcon(this)">
+			  <div class="bar1"></div>
+			  <div class="bar2"></div>
+			  <div class="bar3"></div>
+			</div>
+             <ul class="navbar-full">
+                <li class="dropdown">
+                  <a href="">Speakers</a>
+                  <ul class="dropdown-menu">
+                    <li><a href="">Speaker Name</a></li>
+                    <li><a href="">Speaker Name</a></li>
+                    <li><a href="">Speaker Name</a></li>
+                    <li><a href="">Speaker Name</a></li>
+                    <li><a href="">Speaker Name</a></li>
+                    <li><a href="">Additional Speakers</a></li>
+                  </ul>
+                </li>
+                  <li class="dropdown">
+                    <a href="">Exhibits</a>
+                    <ul class="dropdown-menu">
+                      <li><a href="">Overview</a></li>
+                      <li><a href="">Focus Areas</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown">
+                    <a href="">Hackathon</a>
+                    <ul class="dropdown-menu">
+                      <li><a href="">Best Overall App</a></li>
+                      <li><a href="">Accelerator Challenges</a></li>
+                      <li><a href="">Sponsor Challenges</a></li>
+                      <li><a href="">Kicker Contest</a></li>
+                      <li><a href="">Sponsor Kicker Contest</a></li>
+                      <li><a href="">Judging Criteria</a></li>
+                      <li><a href="">Legal</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown">
+                    <a href="">Maker Camp Live</a>
+                    <ul class="dropdown-menu">
+                      <li><a href="">Overview</a></li>
+                      <li><a href="">Projects</a></li>
+                      <li><a href="">Safety Waiver</a></li>
+                      <li><a href="">Maker FAQ</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown">
+                    <a href="">Challenge</a>
+                    <ul class="dropdown-menu">
+                      <li><a href="">Challenge</a></li>
+                      <li><a href="">Categories</a></li>
+                      <li><a href="">Judging</a></li>
+                      <li><a href="">Timeline</a></li>
+                      <li><a href="">Prizes</a></li>
+                      <li><a href="">Watch the Challenge</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown">
+                    <a href="schedule.html">Schedule</a>
+                    <ul class="dropdown-menu">
+                      <li><a href="">July 15th</a></li>
+                      <li><a href="">July 16th</a></li>
+                    </ul>
+                  </li>
+                  <li class="registerAnchor"><a href=""><span class="registerBtn">Register</span></a></li>
+              </ul>
+            </div>
+      </div><!-- /.container-fluid -->
 	    <div class='section-black hero'>
 	    	<img src='images/tiles/hero-home.png'>
 	    </div>
@@ -35,6 +130,22 @@
    	    	&copy; 2016 AT&amp;T Intellectual Property. This site is hosted for AT&amp;T by eventcore. All rights reserved. AT&amp;T, the AT&amp;T logo and all other AT&amp;T marks contained herein are trademarks of AT&amp;T Intellectual Property and/or AT&amp;T affiliated companies.Should you have any questions regarding the 2016 AT&amp;T Developer Summit or require assistance, please contact us at: <a href=mailto:"registration@attdeveloperevents.com">registration@attdeveloperevents.com</a>
    	    	</p>
 	    </footer>
+	    <script>
+			function animateMenuIcon(x) {
+			    x.classList.toggle("change");
+			    
+			    if($('#menuIcon').hasClass("change")){
+				    $( ".navbar-full" ).slideDown( "slow", function() {
+					    // Animation complete.
+					});
+				}
+				else{
+					$( ".navbar-full" ).slideUp( "slow", function() {
+					    // Animation complete.
+					});
+				}
+			}
+		</script>
 
 	</body>
 
