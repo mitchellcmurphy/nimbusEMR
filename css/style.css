@@ -7,9 +7,23 @@ body, section, h1, h2, h3, h4, h5, h6, p {
 }
 
 /* Global Styles */
-h2 {
-	font-weight: 400;
+h1, h2, h3, h4, h5 {
 	text-transform: uppercase;
+}
+
+h2 {
+	font-size: 24px;
+	font-weight: 400;
+}
+
+h3 {
+	font-size: 20px; 
+	font-weight: 500;
+}
+
+h4 {
+	font-size: 16px; 
+	font-weight: 400;
 }
 
 body {
@@ -305,25 +319,92 @@ a.button {
 		border-color: #000;
 	}
 
+/* Tiles */
 
-/* Grid */
-.grid {
-  display: flex;
-}
+	/* Tiles Home */
 
-.grid-cell {
-  flex: 1;
-  max-width: 400px;
-  height: 400px;
-}
+	.tiles-home {
+		width: 900px;
+		height: auto;
+		margin: 0 auto;
+	    display: flex;
+	    display: -webkit-flex;
+	    display: -moz-flex;
+	    flex-flow: row wrap;
+	    -webkit-flex-flow: row wrap;
+	    -moz-flex-flow: row wrap;
+	    align-content: stretch;
+	    justify-content: space-between;
+	}
 
-.grid-gutters {
-  margin: -1em 0 0 -1em;
-}
-.gird-gutters > .grid-cell {
-  padding: 1em 0 0 1em;
-}
+	.tile-home {
+		box-sizing: border-box;
+	    -moz-box-sizing: border-box;
+	    -webkit-box-sizing: border-box;
+		position: relative;
+		width: 415px;
+		height: 415px;
+		margin-bottom: 80px;
+		border: 7px solid #fff;
+	}
 
+	.tile-home-info {
+		width: 50%;
+		height: 196px;
+		float: left;
+		border-bottom: 7px solid #fff;
+	}
+
+	.tile-home-info h3{
+		margin: 10px 0 0 10px;
+		color: #fff;
+	}
+
+	.tile-home-info h4{
+		margin: 0 0 0 10px;
+		color: #000;
+
+	}
+
+	.tile-home-image {
+		width: 50%;
+		float: right;
+	}
+
+	 .tile-home-image img {
+		width: 100%;
+		height: auto;
+	}
+
+	.tile-home-overlay {
+		position: absolute;
+		top: -7px;
+		right: -10px;
+		width: 215px;
+		height: 215px;
+		background-repeat: no-repeat;
+	}
+
+	.tile-home-overlay-1 {
+		background-image: url('../images/tiles/tile1.png');
+	}
+
+	.tile-home-overlay-2 {
+		background-image: url('../images/tiles/tile2.png');
+	}
+
+	.tile-home-overlay-3 {
+		background-image: url('../images/tiles/tile3.png');
+	}
+
+	.tile-home-overlay-4 {
+		background-image: url('../images/tiles/tile4.png');
+	}
+
+	.tile-home p{
+		clear: both;
+		padding: 5px 10px 10px 10px;
+	}
 
 /* Footer */
 footer h2{
