@@ -41,6 +41,9 @@ p {
 /*Nav Bar Header*/
 .navbar-header{
 	background-color: black;
+	height: 60px;
+	display: flex;
+	align-items: center;
 }
 
 .logoSpan {
@@ -55,8 +58,8 @@ p {
 #menuIcon {
     display: none;
     cursor: pointer;
-    float: right;
     padding-right: 10px;
+    margin-left: auto;
 }
 
 .bar1, .bar2, .bar3 {
@@ -90,7 +93,7 @@ p {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    float: right;
+    margin-left: auto;
 }
 
 .navbar-full > li{
@@ -111,10 +114,11 @@ p {
 
 @media (min-width: 1015px){
   .navbar-full > li.dropdown .dropdown-menu { 
-    visibility: hidden; 
+/*    visibility: hidden; */
     position: absolute;
-    display:table; 
+    display:none; 
     width: 100%; 
+    padding-top: 10px;
     text-align: center; 
     left:0; 
     right:0; 
@@ -128,17 +132,27 @@ p {
 
   .dropdown-menu>li>a {
   	text-decoration: none;
+  	padding: 0 10px 0 10px;
   }
 }
 
 @media (max-width: 1015px){
-  #menuIcon{
-  	display: inline-block;
-  }
+	.navbar-header{
+		background-color: black;
+		height: auto;
+		display: table;
+    	width: 100%;
+	}
+
+	#menuIcon{
+		display: inline-block;
+		float: right;
+	}
 
   .navbar-full{
 		display: none;
 		float: none;
+		margin-left: none;
 	}
 
 	.navbar-full > li{
@@ -154,9 +168,8 @@ p {
 	}
 
   .navbar-full > li.dropdown .dropdown-menu { 
-    visibility: hidden; 
     position: absolute;
-    display:table; 
+    visibility: hidden;
     width: 100%; 
     text-align: center; 
     left:0; 
@@ -179,10 +192,12 @@ p {
 .registerBtn {
   padding: 5px 7px 5px 7px;
   border: 2px solid #1496d6;
+  color:#1496d6;
 }
 
 .registerBtn:hover{
   background: #1496d6;
+  color: white;
 }
 
 /* Buttons */
@@ -196,6 +211,11 @@ a.button {
 	text-transform: uppercase;
 	font-size: 16px;
 	text-decoration: none;
+}
+
+a.button:hover{
+	color: white;
+	background-color: #009fdb;
 }
 
 
@@ -232,9 +252,19 @@ a.button {
 	margin: 0 auto;
 }
 
+.middle {
+	text-align: center;
+	padding-bottom: 80px;
+}
+
 #home .section-blue h2 {
 	text-align: center;
 	padding: 80px 0 80px 0;
+}
+
+.scheduleButton:hover{
+	color: #009fdb !important;
+	background-color: white !important;
 }
 
 /* Sections */
@@ -407,6 +437,58 @@ a.button {
 	}
 
 /* Footer */
+.stayInTouch>label>input {
+	padding: 6px;
+    border: 1px solid ffffff;
+    box-sizing: border-box;
+    background: white;
+    width: 445px;
+    height: 60px;
+    background-color: #ffffff;
+    font-family: OmnesATTII-Italic;
+    font-size: 18px;
+    color: #8d8d8d;
+    font-style: italic;
+}
+
+.stayInTouchButton{
+	width: 121px;
+    height: 60px;
+    background-color: #009fdb;
+    font-family: OmnesATTIIMedium;
+    font-size: 18px;
+    color: #ffffff;
+    margin-left: -3px;
+    border: 0;
+}
+
+.stayInTouchButton:hover{
+	cursor: pointer;
+}
+
+.sponsorButtons{
+	text-align: center;
+	padding-bottom: 80px;
+}
+
+.sponsorButton{
+	border-color: #009fdb !important;
+	color: #009fdb !important;
+}
+
+.sponsorButton:hover{
+	color: white !important;
+}
+
+.socialButton{
+	width: 60px;
+	height: 60px;
+}
+
+.sponsorButton img{
+	margin:0 !important;
+}
+
 footer h2{
 	text-align: center;
 	padding: 80px 0 40px 0;
