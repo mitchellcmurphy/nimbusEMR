@@ -87,15 +87,6 @@ p {
     transform: rotate(45deg) translate(-8px, -8px) ;
 }
 
-.navbar-full{
-    list-style-type: none;
-    display: -webkit-inline-box;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    margin-left: auto;
-}
-
 .navbar-full > li{
   right: 0;
 }
@@ -113,6 +104,14 @@ p {
 }
 
 @media (min-width: 1015px){
+	.navbar-full{
+	    list-style-type: none;
+	    display: -webkit-inline-box !important;
+	    margin: 0;
+	    padding: 0;
+	    overflow: hidden;
+	    margin-left: auto;
+	}
   .navbar-full > li.dropdown .dropdown-menu { 
 /*    visibility: hidden; */
     position: absolute;
