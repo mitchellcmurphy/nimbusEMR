@@ -190,6 +190,11 @@ p {
   vertical-align: -webkit-baseline-middle;
 }
 
+.dropdown-menu-fixed {
+	position: fixed !important;
+	top: 0;
+}
+
 .registerAnchor:hover{
   background-color: black;
 }
@@ -521,14 +526,9 @@ a.button:hover{
 .speakers-additional p{
 	text-align: left;
 	font-size: 18px;
-	max-height: 85px;
 	width: 727px;
 	padding: 5px 0 0 120px;
-}
-
-.speakers-additional a{
-	position: absolute;
-	text-align: 
+	line-height: 27px;
 }
 
 .speaker-name{

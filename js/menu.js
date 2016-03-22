@@ -22,6 +22,9 @@ function animateMenuIcon(x) {
 
 $(window).scroll(function () {
     if ($(window).scrollTop() > 45) {
-        $('.dropdown-menu').css('top', $(window).scrollTop());
+        $('.dropdown-menu').addClass('dropdown-menu-fixed');
+    }
+    else{
+    	$('.dropdown-menu').removeClass('dropdown-menu-fixed');
     }
 });
