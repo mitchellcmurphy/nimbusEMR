@@ -210,30 +210,8 @@
    	    	&copy; 2016 AT&amp;T Intellectual Property. This site is hosted for AT&amp;T by eventcore. All rights reserved. AT&amp;T, the AT&amp;T logo and all other AT&amp;T marks contained herein are trademarks of AT&amp;T Intellectual Property and/or AT&amp;T affiliated companies.Should you have any questions regarding the 2016 AT&amp;T Developer Summit or require assistance, please contact us at: <a href=mailto:"registration@attdeveloperevents.com">registration@attdeveloperevents.com</a>
    	    	</p>
 	    </footer>
-	    <script>
-			function animateMenuIcon(x) {
-			    x.classList.toggle("change");
-			    
-			    if($('#menuIcon').hasClass("change")){
-				    $( ".navbar-full" ).slideDown( "slow", function() {
-					    // Animation complete.
-					});
-				}
-				else{
-					$( ".navbar-full" ).slideUp( "slow", function() {
-					    // Animation complete.
-					});
-				}
-			}
 
-			$(".dropdown").hover(function() {
-		        $('.dropdown-menu', this).stop( true, true ).slideDown("fast");
-		       },
-		       function() {
-		         $('.dropdown-menu', this).stop( true, true ).slideUp("fast");
-			});
-		</script>
-
+	    <script type="text/javascript" src="js/menu.js"></script>
 	</body>
 
 </html>
