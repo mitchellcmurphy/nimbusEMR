@@ -99,7 +99,7 @@ p {
   text-decoration: none;
 }
 
-.navbar-full > li.dropdown > a:hover{
+.navbar-full > li.dropdown:hover > a{
   background-color: #00a3e0;
 }
 
@@ -431,6 +431,42 @@ a.button:hover{
 		clear: both;
 		padding: 5px 10px 10px 10px;
 	}
+
+/*Speakers*/
+.centerContent{
+	text-align: center;
+}
+
+.speakersHeader{
+	display: flex;
+    align-items: center;
+    padding: 40px 0 20px 0;
+}
+
+.speakersHeader>h3{
+	margin-left: 75px;
+    font-size: 36px;
+}
+
+.speakersHeader>img{
+	width: 200px;
+    margin-left: auto;
+    margin-right: 75px;
+}
+
+.keySpeakersContainer{
+	display: inline-block;
+}
+
+.speakerContainer{
+	float: left;
+	margin: 20px;
+}
+
+.speakerContainer>img{
+	width: 180px;
+	height: 180px;
+}
 
 /* Footer */
 .stayInTouch>label>input {
