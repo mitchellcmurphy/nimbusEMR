@@ -144,7 +144,6 @@ p {
 @media (max-width: 1015px){
 	.navbar-header{
 		background-color: black;
-		height: auto;
 		display: table;
     	width: 100%;
 	}
@@ -230,9 +229,38 @@ a.button:hover{
 
 
 /* Home */
-.hero img {
+.hero-overlay img {
 	width: 100%;
 	display: block;
+}
+
+.hero-overlay {
+	position: relative;
+}
+
+.hero-overlay-2 {
+	position: absolute;
+	z-index: 3;
+	top: 0;
+	right: 0;
+	left: 0;
+}
+
+.hero-overlay-2 img{
+	width: 100%;
+	display: block;
+}
+
+.hero-images {
+	position: absolute;
+	top: 0;
+	z-index: 0;
+}
+
+.hero-images img{
+	width: 33.33%;
+	display: block;
+	float: left;
 }
 
 .intro {
@@ -613,6 +641,10 @@ a.button:hover{
 	background-position: center -33px;
 }
 
+footer {
+	background-color: #fff;
+	color: #000;
+}
 
 footer h2{
 	text-align: center;
@@ -633,7 +665,7 @@ footer p {
 	max-width: 80%;
 	margin: 0 auto;
 	text-align: center;
-	padding: 0 0 20px 0;
+	padding: 0 0 40px 0;
 	font-size: 12px;
 }
 
