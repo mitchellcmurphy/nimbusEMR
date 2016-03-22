@@ -38,6 +38,10 @@ p {
 	line-height: 150%;
 }
 
+.background-black {
+	background-color: #000;
+}
+
 /*Nav Bar Header*/
 
 .logo img {
@@ -139,13 +143,19 @@ p {
 }
 
 @media (max-width: 1015px){
+	.logo img {
+		width: 200px;
+		margin: 15px 0 0 20px;
+	}
+
 	.navbar-header{
 		background-color: black;
-		display: table;
+		display: inline-block;
     	width: 100%;
 	}
 
 	#menuIcon{
+		margin-top: 10px;
 		display: inline-block;
 		float: right;
 	}
@@ -155,12 +165,14 @@ p {
 		float: none;
 		margin-left: none;
 		list-style: none;
-	    margin: 0;
-	    padding: 0;
+		margin: 0;
+		padding: 0;
+	    overflow: hidden;
 	}
 
 	.navbar-full > li{
 	  line-height: 30px;
+	  background-color: #000;
 	}
 
 	.navbar-full > li > a{
