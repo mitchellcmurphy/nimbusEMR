@@ -202,9 +202,8 @@ p {
 
 /* Buttons */
 .button {
-	padding: 15px 30px 15px 30px;
+	padding: 17px 30px 13px 30px;
 	border: 4px solid #000;
-	display: inline-block;
 }
 
 a.button {
@@ -218,20 +217,6 @@ a.button:hover{
 	background-color: #009fdb;
 }
 
-
-/* Overrides */
-
-.color-white {
-	color: #fff !important;
-}
-
-.color-blue {
-	color: #009fdb !important;
-}
-
-.color-black {
-	color: #000 !important;
-}
 
 
 /* Home */
@@ -343,10 +328,11 @@ a.button:hover{
 	}
 
 	.section-gray a {
+		color: #009fdb;
 	}
 
 	.section-gray .button{
-		border-color: #000;
+		border-color: #009fdb;
 	}
 
 /* Tiles */
@@ -366,6 +352,18 @@ a.button:hover{
 	    align-content: stretch;
 	    justify-content: space-between;
 	}
+
+	@media (max-width: 920px){
+		.tiles-home {
+			width: 480px;
+		}
+
+		.tile-home{
+			margin: 0 auto;
+			display: block;
+		}
+	}
+
 
 	.tile-home {
 		box-sizing: border-box;
@@ -393,7 +391,6 @@ a.button:hover{
 	.tile-home-info h4{
 		margin: 0 0 0 10px;
 		color: #000;
-
 	}
 
 	.tile-home-image {
@@ -449,6 +446,7 @@ a.button:hover{
     font-size: 18px;
     color: #8d8d8d;
     font-style: italic;
+    text-indent: 10px;
 }
 
 .stayInTouchButton{
@@ -480,14 +478,32 @@ a.button:hover{
 	color: white !important;
 }
 
-.socialButton{
-	width: 60px;
-	height: 60px;
+.button-social{
+	height: 55px;
+	width: 55px;
+	margin-left: 10px;
 }
 
-.sponsorButton img{
-	margin:0 !important;
+.button-facebook {
+	background-image: url('../images/facebook.png');
+	background-repeat: no-repeat;
+	background-position: center 6px;
 }
+
+.button-facebook:hover{
+	background-position: center -37px;
+}
+
+.button-twitter {
+	background-image: url('../images/twitter.png');
+	background-repeat: no-repeat;
+	background-position: center 10px;
+}
+
+.button-twitter:hover{
+	background-position: center -33px;
+}
+
 
 footer h2{
 	text-align: center;
@@ -499,7 +515,7 @@ footer form {
 	padding: 0 0 40px 0;
 }
 
-footer img {
+img.footer-logo {
 	display: block;
 	margin: 80px auto;
 }
@@ -510,6 +526,24 @@ footer p {
 	text-align: center;
 	padding: 0 0 20px 0;
 	font-size: 12px;
+}
+
+/* Overrides */
+
+.color-white {
+	color: #fff;
+}
+
+.color-blue {
+	color: #009fdb;
+}
+
+.color-black {
+	color: #000;
+}
+
+.padding-top-0{
+	padding-top: 0 !important;
 }
 
 
