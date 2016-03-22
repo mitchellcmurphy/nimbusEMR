@@ -26,7 +26,7 @@ h4 {
 	font-weight: 400;
 }
 
-body {
+body, input {
 	font-family: 'Omnes';
 }
 
@@ -79,8 +79,8 @@ p {
 
 /* Rotate first bar */
 .change .bar1 {
-    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
-    transform: rotate(-45deg) translate(-9px, 6px) ;
+    -webkit-transform: rotate(-45deg) translate(-6px, 6px) ;
+    transform: rotate(-45deg) translate(-5px, 5px) ;
 }
 
 /* Fade out the second bar */
@@ -472,6 +472,7 @@ a.button:hover{
 		.tile-home{
 			margin: 0 auto;
 			display: block;
+			margin-bottom: 40px;
 		}
 	}
 
@@ -591,17 +592,30 @@ a.button:hover{
     color: #8d8d8d;
     font-style: italic;
     text-indent: 10px;
+    outline: 0;
 }
+
 
 .stayInTouchButton{
 	width: 121px;
     height: 60px;
     background-color: #009fdb;
-    font-family: OmnesATTIIMedium;
     font-size: 18px;
     color: #ffffff;
     margin-left: -3px;
     border: 0;
+}
+
+@media (max-width: 920px){
+	.stayInTouch>label>input {
+		width: 60%;
+	    font-size: 14px;
+
+	}
+	.stayInTouchButton{
+		width: 30%;
+	}
+
 }
 
 .stayInTouchButton:hover{
