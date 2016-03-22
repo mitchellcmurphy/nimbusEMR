@@ -95,7 +95,7 @@ p {
 }
 
 .navbar-full > li{
-  right: 0;
+  line-height: 60px;
 }
 
 .navbar-full > li > a{
@@ -157,10 +157,13 @@ p {
 		display: none;
 		float: none;
 		margin-left: none;
+		list-style: none;
+	    margin: 0;
+	    padding: 0;
 	}
 
 	.navbar-full > li{
-	  right: 0;
+	  line-height: 30px;
 	}
 
 	.navbar-full > li > a{
