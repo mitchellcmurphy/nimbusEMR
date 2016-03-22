@@ -13,9 +13,15 @@ function animateMenuIcon(x) {
 	}
 }
 
-$(".dropdown").hover(function() {
-    $('.dropdown-menu', this).stop( true, true ).slideDown("fast");
-   },
-   function() {
-     $('.dropdown-menu', this).stop( true, true ).slideUp("fast");
+// $(".dropdown").hover(function() {
+//     $('.dropdown-menu', this).stop( true, true ).slideDown("fast");
+//    },
+//    function() {
+//      $('.dropdown-menu', this).stop( true, true ).slideUp("fast");
+// });
+
+$(window).scroll(function () {
+    if ($(window).scrollTop() > 45) {
+        $('.dropdown-menu').css('top', $(window).scrollTop());
+    }
 });
