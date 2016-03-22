@@ -280,15 +280,12 @@ a.button:hover{
 		background-color: #fff;
 	}
 
-	.section-white p, .section-white h2, .section-white a, .section-white b, .section-white i {
+	.section-white h2, .section-white b, .section-white i {
 		color: #fff;
 	}
 
-	.section-white h3 {
+	.section-white p, .section-white a, .section-white h3 {
 		color: #000;
-	}
-
-	.section-white a{
 	}
 
 	.section-white .button{
@@ -455,7 +452,9 @@ a.button:hover{
 }
 
 .keySpeakersContainer{
-	display: inline-block;
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .speakerContainer{
@@ -466,6 +465,60 @@ a.button:hover{
 .speakerContainer>img{
 	width: 180px;
 	height: 180px;
+}
+
+.speakerContainer>div{
+	text-align: left;
+	font-weight: 18px;
+}
+
+.speakers-additional-header{
+	text-align: left;
+    margin-left: 40px;
+}
+
+.speakers-additional-list{
+	list-style: none;
+}
+
+.speakers-additional-container{
+
+}
+
+.speakers-additional{
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.speakers-additional img{
+	width: 100px;
+	height: 100px;
+	float: left;
+	margin-right: 20px;
+}
+
+.speakers-additional p{
+	text-align: left;
+	font-size: 18px;
+	max-height: 85px;
+	width: 727px;
+	padding-top: 5px;
+}
+
+.speakers-additional a{
+	position: absolute;
+	text-align: 
+}
+
+.speaker-name{
+	color: black;
+	text-align: left;
+	font-size: 24px;
+}
+
+.speaker-title{
+	color: #3ea0d6;
+	text-align: left;
 }
 
 /* Footer */
