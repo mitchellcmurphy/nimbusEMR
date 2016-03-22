@@ -458,34 +458,46 @@ a.button:hover{
     margin-right: 75px;
 }
 
-.keySpeakersContainer{
+.speakers-key-header{
+	text-align: left;
+	width: 860px;
+	border-bottom: solid 1px #ffffff;
+	color: #fff;
+	font-size: 24px;
+	padding-top: 80px;
+	margin: 0 0 43px 174px;
+}
+
+.speakers-key-container{
 	display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    max-width: 860px;
+    margin-left: 174px;
 }
 
-.speakerContainer{
-	float: left;
+.speaker-key-container{
 	margin: 20px;
 }
 
-.speakerContainer>img{
-	width: 180px;
-	height: 180px;
+.speaker-key-container>img{
+	width: 150px;
+	height: 150px;
 }
 
-.speakerContainer>div{
+.speaker-key-container>div{
 	text-align: left;
 	font-weight: 18px;
 }
 
 .speakers-additional-header{
 	text-align: left;
-    margin-left: 40px;
+    margin-left: 170px;
 }
 
 .speakers-additional-list{
 	list-style: none;
+	margin-left: 130px;
 }
 
 .speakers-additional-container{
@@ -494,7 +506,6 @@ a.button:hover{
 
 .speakers-additional{
 	overflow: hidden;
-	text-overflow: ellipsis;
 }
 
 .speakers-additional img{
