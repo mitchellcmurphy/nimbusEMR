@@ -106,7 +106,7 @@ p {
   display: block;
   color: white;
   text-align: center;
-  padding: 14px 16px;
+  padding: 0 16px 0 16px;
   text-decoration: none;
 }
 
@@ -124,15 +124,12 @@ p {
 	    margin-left: auto;
 	}
   .navbar-full > li.dropdown .dropdown-menu { 
-/*    visibility: hidden; */
     position: absolute;
     width: 100%; 
-    padding-top: 10px;
     text-align: center; 
     left:0; 
     right:0; 
     background-color: #00a3e0;
-    height: 30px; 
   }
 
   .dropdown-menu>li { 
@@ -194,7 +191,6 @@ p {
     left:0; 
     right:0; 
     background-color: #00a3e0;
-    height: 30px; 
   }
 }
 
@@ -500,7 +496,7 @@ a.button:hover{
 .speakersHeader{
 	display: flex;
     align-items: center;
-    padding: 40px 0 20px 0;
+    padding: 80px 0 20px 0;
 }
 
 .speakersHeader>h3{
