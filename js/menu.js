@@ -2,13 +2,14 @@ function animateMenuIcon(x) {
     x.classList.toggle("change");
     
     if($('#menuIcon').hasClass("change")){
+    	
 	    $( ".navbar-full" ).slideDown( "slow", function() {
-		    // Animation complete.
+	    	$( ".navbar-full" ).addClass('navbar-full-mobile');
 		});
 	}
 	else{
 		$( ".navbar-full" ).slideUp( "slow", function() {
-		    // Animation complete.
+		    $( ".navbar-full" ).removeClass('navbar-full-mobile');
 		});
 	}
 }

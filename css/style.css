@@ -170,6 +170,11 @@ p {
 	    overflow: hidden;
 	}
 
+	.navbar-full-mobile{
+		display: inline-block;
+		width: 100%;
+	}
+
 	.navbar-full > li{
 	  line-height: 30px;
 	  background-color: #000;
