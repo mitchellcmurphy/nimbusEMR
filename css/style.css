@@ -113,7 +113,7 @@ p {
 @media (min-width: 1015px){
 	.navbar-full{
 	    list-style-type: none;
-	    display: -webkit-inline-box !important;
+	    display: inline-flex; !important;
 	    margin: 0;
 	    padding: 0;
 	    overflow: hidden;
@@ -512,7 +512,7 @@ a.button:hover{
 .speakers-additional{
 	overflow: hidden;
 	border-top: solid 1px black;
-    padding-top: 41px;
+    padding: 40px 0 40px 0;
     max-width: 860px;
 }
 
