@@ -388,18 +388,6 @@ a.button:hover{
 	    justify-content: space-between;
 	}
 
-	@media (max-width: 920px){
-		.tiles-home {
-			width: 480px;
-		}
-
-		.tile-home{
-			margin: 0 auto;
-			display: block;
-		}
-	}
-
-
 	.tile-home {
 		box-sizing: border-box;
 	    -moz-box-sizing: border-box;
@@ -409,6 +397,15 @@ a.button:hover{
 		height: 415px;
 		margin-bottom: 80px;
 		border: 7px solid #fff;
+	}
+
+	.tile-home a{
+		position: absolute;
+		z-index: 3;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
 	}
 
 	.tile-home-info {
@@ -466,6 +463,17 @@ a.button:hover{
 	.tile-home p{
 		clear: both;
 		padding: 5px 10px 10px 10px;
+	}
+
+	@media (max-width: 920px){
+		.tiles-home {
+			width: 480px;
+		}
+
+		.tile-home{
+			margin: 0 auto;
+			display: block;
+		}
 	}
 
 /*Speakers*/
