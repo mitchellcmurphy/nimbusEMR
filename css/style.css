@@ -106,7 +106,7 @@ p {
   text-decoration: none;
 }
 
-.navbar-full > li.dropdown:hover > a{
+.alwaysHover, .navbar-full > li.dropdown:hover > a{
   background-color: #00a3e0;
 }
 
@@ -120,7 +120,6 @@ p {
   .navbar-full > li.dropdown .dropdown-menu { 
 /*    visibility: hidden; */
     position: absolute;
-    display:none; 
     width: 100%; 
     padding-top: 10px;
     text-align: center; 
@@ -186,6 +185,11 @@ p {
   color: #fff;
   background: #00a3e0;
   vertical-align: -webkit-baseline-middle;
+}
+
+.dropdown-menu-fixed {
+	position: fixed !important;
+	top: 0;
 }
 
 .registerAnchor:hover{
@@ -313,15 +317,12 @@ a.button:hover{
 		background-color: #fff;
 	}
 
-	.section-white p, .section-white h2, .section-white a, .section-white b, .section-white i {
+	.section-white h2, .section-white b, .section-white i {
 		color: #fff;
 	}
 
-	.section-white h3 {
+	.section-white p, .section-white a, .section-white h3 {
 		color: #000;
-	}
-
-	.section-white a{
 	}
 
 	.section-white .button{
@@ -487,18 +488,84 @@ a.button:hover{
     margin-right: 75px;
 }
 
-.keySpeakersContainer{
-	display: inline-block;
+.speakers-key-header{
+	text-align: left;
+	max-width: 860px;
+	border-bottom: solid 1px #ffffff;
+	color: #fff;
+	font-size: 24px;
+	padding-top: 80px;
+	margin: 0 170px 43px 170px;
 }
 
-.speakerContainer{
+.speakers-key-container{
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 860px;
+    margin: 0 170px 0 170px;
+    padding-bottom: 77px;
+}
+
+.speaker-key-container{
+	margin: 10px;
+}
+
+.speaker-key-container>img{
+	width: 150px;
+	height: 150px;
+}
+
+.speaker-key-container>div{
+	text-align: left;
+	font-weight: 18px;
+}
+
+.speakers-additional-header{
+	text-align: left;
+    margin-left: 170px;
+}
+
+.speakers-additional-list{
+	list-style: none;
+	margin-left: 130px;
+}
+
+.speakers-additional-container{
+	max-width: 860px;
+}
+
+.speakers-additional{
+	overflow: hidden;
+	border-top: solid 1px black;
+    padding-top: 41px;
+    max-width: 860px;
+}
+
+.speakers-additional img{
+	width: 100px;
+	height: 100px;
 	float: left;
-	margin: 20px;
+	margin-right: 20px;
 }
 
-.speakerContainer>img{
-	width: 180px;
-	height: 180px;
+.speakers-additional p{
+	text-align: left;
+	font-size: 18px;
+	width: 727px;
+	padding: 5px 0 0 120px;
+	line-height: 27px;
+}
+
+.speaker-name{
+	color: black;
+	text-align: left;
+	font-size: 24px;
+}
+
+.speaker-title{
+	color: #3ea0d6;
+	text-align: left;
 }
 
 /* Footer */

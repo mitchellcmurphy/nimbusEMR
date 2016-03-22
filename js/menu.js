@@ -13,9 +13,18 @@ function animateMenuIcon(x) {
 	}
 }
 
-$(".dropdown").hover(function() {
-    $('.dropdown-menu', this).stop( true, true ).slideDown("fast");
-   },
-   function() {
-     $('.dropdown-menu', this).stop( true, true ).slideUp("fast");
+// $(".dropdown").hover(function() {
+//     $('.dropdown-menu', this).stop( true, true ).slideDown("fast");
+//    },
+//    function() {
+//      $('.dropdown-menu', this).stop( true, true ).slideUp("fast");
+// });
+
+$(window).scroll(function () {
+    if ($(window).scrollTop() > 45) {
+        $('.dropdown-menu').addClass('dropdown-menu-fixed');
+    }
+    else{
+    	$('.dropdown-menu').removeClass('dropdown-menu-fixed');
+    }
 });
