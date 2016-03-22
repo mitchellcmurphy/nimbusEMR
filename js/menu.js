@@ -4,12 +4,12 @@ function animateMenuIcon(x) {
     if($('#menuIcon').hasClass("change")){
     	
 	    $( ".navbar-full" ).slideDown( "slow", function() {
-	    	$( ".navbar-full" ).addClass('navbar-full-mobile');
+	    	
 		});
 	}
 	else{
 		$( ".navbar-full" ).slideUp( "slow", function() {
-		    $( ".navbar-full" ).removeClass('navbar-full-mobile');
+		    
 		});
 	}
 }
