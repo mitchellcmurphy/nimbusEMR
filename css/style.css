@@ -289,6 +289,16 @@ a.button:hover{
 	.intro img {
 		width: 300px;
 	}
+
+	.intro {
+		padding: 20px 0 40px 0;
+	}
+}
+
+@media (max-width: 768px){
+	.intro img{
+		display: none;
+	}
 }
 
 
