@@ -132,7 +132,7 @@ p {
     left:0; 
     right:0; 
     background-color: #00a3e0;
-    height: 30px; 
+    height: 60px; 
   }
 
   .dropdown-menu>li { 
@@ -527,7 +527,7 @@ a.button:hover{
 .speakersHeader{
 	display: flex;
     align-items: center;
-    padding: 40px 0 20px 0;
+    padding: 100px 0 20px 0;
 }
 
 .speakersHeader>h3{
@@ -623,6 +623,19 @@ a.button:hover{
 .speaker-title{
 	color: #3ea0d6;
 	text-align: left;
+}
+
+/*Sponsors*/
+.sponsors-text{
+	max-width: 860px;
+	margin-left: auto;
+    margin-right: auto;
+}
+
+.sponsors-text p{
+	text-align: left;
+	font-size: 16px;
+	line-height: 24px;
 }
 
 /* Footer */
