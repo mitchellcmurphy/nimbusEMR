@@ -340,6 +340,11 @@ a.button:hover{
 		overflow: hidden;
 	}
 
+	.section-centering{
+		width: 860px;
+		margin: 0 auto;
+	}
+
 	.section-view-schedule {
 		text-align: center;
 		padding: 40px 0 80px 0;
@@ -433,9 +438,6 @@ a.button:hover{
 	/* Tiles Home */
 
 	.tiles-home {
-		width: 900px;
-		height: auto;
-		margin: 0 auto;
 	    display: flex;
 	    display: -webkit-flex;
 	    display: -moz-flex;
