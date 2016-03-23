@@ -106,7 +106,7 @@ p {
   display: block;
   color: white;
   text-align: center;
-  padding: 0 16px 0 16px;
+  padding: 14px 16px;
   text-decoration: none;
 }
 
@@ -124,12 +124,15 @@ p {
 	    margin-left: auto;
 	}
   .navbar-full > li.dropdown .dropdown-menu { 
+/*    visibility: hidden; */
     position: absolute;
     width: 100%; 
+    padding-top: 10px;
     text-align: center; 
     left:0; 
     right:0; 
     background-color: #00a3e0;
+    height: 30px; 
   }
 
   .dropdown-menu>li { 
@@ -193,6 +196,7 @@ p {
     left:0; 
     right:0; 
     background-color: #00a3e0;
+    height: 30px; 
   }
 }
 
@@ -205,10 +209,6 @@ p {
 .dropdown-menu-fixed {
 	position: fixed !important;
 	top: 0;
-}
-
-.registerAnchor:hover{
-  background-color: black;
 }
 
 .registerBtn {
@@ -242,7 +242,7 @@ a.button:hover{
 
 
 /* Home */
-.hero-overlay img {
+.hero-overlay > img {
 	width: 100%;
 	display: block;
 }
@@ -288,22 +288,45 @@ a.button:hover{
 	margin: 0 auto;
 }
 
-.middle {
-	text-align: center;
-	padding-bottom: 80px;
+@media (max-width: 920px){
+	.intro img {
+		width: 300px;
+	}
+
+	.intro {
+		padding: 20px 0 40px 0;
+	}
 }
+
+@media (max-width: 768px){
+	.intro img{
+		display: none;
+	}
+}
+
 
 #home .section-blue h2 {
 	text-align: center;
 	padding: 80px 0 80px 0;
 }
 
-.scheduleButton:hover{
-	color: #009fdb !important;
-	background-color: white !important;
+@media (max-width: 920px){
+	#home .section-blue h2 {
+		padding: 40px 0 40px 0;
+	}
 }
 
+
 /* Sections */
+
+	section{
+		overflow: hidden;
+	}
+
+	.section-view-schedule {
+		text-align: center;
+		padding: 40px 0 80px 0;
+	}
 
 	/* Section Blue */
 
@@ -324,6 +347,11 @@ a.button:hover{
 
 	.section-blue .button{
 		border-color: #fff;
+	}
+
+	.section-blue .button:hover{
+	color: #009fdb;
+	background-color: #fff;		
 	}
 
 	/* Section White */
@@ -365,7 +393,7 @@ a.button:hover{
 		border-color: #009fdb;
 	}
 
-	/* Sectoin Gray */
+	/* Section Gray */
 
 	.section-gray {
 		background-color: #eeeeee;
@@ -481,6 +509,7 @@ a.button:hover{
 	@media (max-width: 920px){
 		.tiles-home {
 			width: 480px;
+			display: inline;
 		}
 
 		.tile-home{
@@ -498,7 +527,7 @@ a.button:hover{
 .speakersHeader{
 	display: flex;
     align-items: center;
-    padding: 80px 0 20px 0;
+    padding: 40px 0 20px 0;
 }
 
 .speakersHeader>h3{
@@ -599,24 +628,21 @@ a.button:hover{
 /* Footer */
 .stayInTouch>label>input {
 	padding: 6px;
-    border: 1px solid ffffff;
     box-sizing: border-box;
-    background: white;
     width: 445px;
     height: 60px;
-    background-color: #ffffff;
-    font-family: OmnesATTII-Italic;
+    font-style: italic;
     font-size: 18px;
     color: #8d8d8d;
     font-style: italic;
     text-indent: 10px;
     outline: 0;
+    border: 4px solid white;
 }
-
 
 .stayInTouchButton{
 	width: 121px;
-    height: 60px;
+    height: 61px;
     background-color: #009fdb;
     font-size: 18px;
     color: #ffffff;
@@ -624,7 +650,11 @@ a.button:hover{
     border: 0;
 }
 
-@media (max-width: 920px){
+.stayInTouchButton:hover{
+	cursor: pointer;
+}
+
+@media (max-width: 768px){
 	.stayInTouch>label>input {
 		width: 60%;
 	    font-size: 14px;
@@ -633,25 +663,11 @@ a.button:hover{
 	.stayInTouchButton{
 		width: 30%;
 	}
-
-}
-
-.stayInTouchButton:hover{
-	cursor: pointer;
 }
 
 .sponsorButtons{
 	text-align: center;
-	padding-bottom: 80px;
-}
-
-.sponsorButton{
-	border-color: #009fdb !important;
-	color: #009fdb !important;
-}
-
-.sponsorButton:hover{
-	color: white !important;
+	padding-bottom: 120px;
 }
 
 .button-social{
@@ -725,5 +741,3 @@ footer p {
 .padding-top-0{
 	padding-top: 0 !important;
 }
-
-
