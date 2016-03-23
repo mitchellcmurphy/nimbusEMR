@@ -237,9 +237,9 @@ a.button:hover{
 }
 
 
-2
+
 /* Home */
-.hero-overlay img {
+.hero-overlay > img {
 	width: 100%;
 	display: block;
 }
