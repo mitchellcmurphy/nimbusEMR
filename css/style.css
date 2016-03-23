@@ -42,23 +42,6 @@ p {
 	background-color: #000;
 }
 
-.secondary-page-header{
-	display: flex;
-    align-items: center;
-    padding: 100px 0 20px 0;
-}
-
-.secondary-page-header>h3{
-	margin-left: 75px;
-    font-size: 36px;
-}
-
-.secondary-page-header>img{
-	width: 200px;
-    margin-left: auto;
-    margin-right: 75px;
-}
-
 /*Nav Bar Header*/
 
 .logo img {
@@ -412,6 +395,10 @@ a.button:hover{
 
 	.section-black {
 		background-color: #000;
+	}
+
+	.section-black h1{
+		color: #fff;
 	}
 
 	.section-black p, .section-black  h2, .section-black  a, .section-black b, .section-black i {
