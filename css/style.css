@@ -122,7 +122,7 @@ p {
 }
 
 .navbar-full > li{
-  line-height: 60px;
+  line-height: 32px;
 }
 
 .navbar-full > li > a{
@@ -150,12 +150,10 @@ p {
 /*    visibility: hidden; */
     position: absolute;
     width: 100%; 
-    padding-top: 10px;
     text-align: center; 
     left:0; 
     right:0; 
     background-color: #00a3e0;
-    height: 60px; 
   }
 
   .dropdown-menu>li { 
