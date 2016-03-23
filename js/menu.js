@@ -1,7 +1,11 @@
 function animateMenuIcon(x) {
     x.classList.toggle("change");
     
-    if($('#menuIcon').hasClass("change")){
+	$( ".navbar-full" ).slideToggle( "slow", function() {
+		if ($(this).is(':visible'))
+			$(this).css('display','inline-block');
+	});
+    /* if($('#menuIcon').hasClass("change")){
     	
 	    $( ".navbar-full" ).slideDown( "slow", function() {
 	    	
@@ -11,7 +15,7 @@ function animateMenuIcon(x) {
 		$( ".navbar-full" ).slideUp( "slow", function() {
 		    
 		});
-	}
+	} */
 }
 
 // $(".dropdown").hover(function() {

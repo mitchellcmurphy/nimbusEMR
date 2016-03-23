@@ -167,20 +167,23 @@ p {
 		list-style: none;
 		margin: 0;
 		padding: 0;
+		position: relative;
+		width: 100%;
+		z-index: 100;
 	}
 
 	.navbar-full > li{
-	  line-height: 30px;
+	  line-height: 60px;
 	  background-color: #000;
 	}
 
-	.navbar-full > li > a{
+/* 	.navbar-full > li > a{
 	  display: block;
 	  color: white;
 	  text-align: center;
 	  padding: 14px 16px;
 	  text-decoration: none;
-	}
+	} */
 
   .navbar-full > li.dropdown .dropdown-menu { 
     position: absolute;
