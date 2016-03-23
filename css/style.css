@@ -293,6 +293,10 @@ a.button:hover{
 	float: left;
 }
 
+.end-padding{
+	padding-bottom: 80px;
+}
+
 .intro {
 	text-align: center;
 	padding: 80px 0 80px 0;
@@ -341,7 +345,7 @@ a.button:hover{
 	}
 
 	.section-centering{
-		width: 860px;
+		max-width: 860px;
 		margin: 0 auto;
 	}
 
@@ -392,6 +396,15 @@ a.button:hover{
 
 	.section-white .button{
 		border-color: #000;
+	}
+
+	.section-white h3.subtitle{
+		text-align: left;
+		max-width: 860px;
+		border-bottom: solid 1px #000;
+		font-size: 24px;
+		padding-top: 80px;
+		margin: 0 auto 43px auto;
 	}
 
 	/* Section Black */
@@ -629,9 +642,6 @@ a.button:hover{
 
 /*Sponsors*/
 .sponsors-text{
-	max-width: 860px;
-	margin-left: auto;
-    margin-right: auto;
     padding: 80px 0 80px 0;
 }
 
@@ -644,7 +654,6 @@ a.button:hover{
 .sponsors-container{
 	display: flex;
     flex-wrap: wrap;
-    max-width: 860px;
     padding: 22px 0 82px 0;
 }
 
