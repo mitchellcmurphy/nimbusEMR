@@ -170,7 +170,6 @@ p {
 		list-style: none;
 		margin: 0;
 		padding: 0;
-	    overflow: hidden;
 	}
 
 	.navbar-full > li{
@@ -536,7 +535,7 @@ a.button:hover{
 	color: #fff;
 	font-size: 24px;
 	padding-top: 80px;
-	margin: 0 170px 43px 170px;
+	margin: 0 auto 43px auto;
 }
 
 .speakers-key-container{
@@ -544,7 +543,7 @@ a.button:hover{
     flex-wrap: wrap;
     justify-content: center;
     max-width: 860px;
-    margin: 0 170px 0 170px;
+    margin: 0 auto 0 auto;
     padding-bottom: 77px;
 }
 
@@ -564,16 +563,20 @@ a.button:hover{
 
 .speakers-additional-header{
 	text-align: left;
-    margin-left: 170px;
+    max-width: 860px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 40px;
 }
 
 .speakers-additional-list{
 	list-style: none;
-	margin-left: 130px;
 }
 
 .speakers-additional-container{
 	max-width: 860px;
+	margin-left: auto;
+    margin-right: auto;
 }
 
 .speakers-additional{
@@ -593,7 +596,7 @@ a.button:hover{
 .speakers-additional p{
 	text-align: left;
 	font-size: 18px;
-	width: 727px;
+	max-width: 727px;
 	padding: 5px 0 0 120px;
 	line-height: 27px;
 }
