@@ -42,6 +42,12 @@ p {
 	background-color: #000;
 }
 
+.border-bottom-white{
+	border-bottom: solid 1px #ffffff;
+	margin-bottom: 20px;
+    padding-bottom: 8px;
+}
+
 .secondary-page-header{
 	display: flex;
     align-items: center;
@@ -376,8 +382,25 @@ a.button:hover{
 	}
 
 	.section-blue .button:hover{
-	color: #009fdb;
-	background-color: #fff;		
+		color: #009fdb;
+		background-color: #fff;		
+	}
+
+	.section-blue h2.subtitle{
+		text-align: left;
+		border-bottom: solid 1px #ffffff;
+		font-size: 24px;
+		padding-top: 80px;
+		margin: 0 auto 43px auto;
+	}
+
+	.section-black h2.subtitle{
+		color: #ffffff;
+		text-align: left;
+		border-bottom: solid 1px #ffffff;
+		font-size: 24px;
+		padding-top: 80px;
+		margin: 0 auto 43px auto;
 	}
 
 	/* Section White */
@@ -679,6 +702,41 @@ a.button:hover{
 .sponsor-container>span>img{
 	display: block;
 	margin: auto auto;
+}
+
+/*Schedule*/
+.schedule-items-container{
+	display: flex;
+}
+
+.schedule-items-container div:first-child{
+	min-width: 215px;
+}
+
+.schedule-layout div.schedule-items-container:first-of-type{
+    padding: 0 0 18px 0;
+}
+
+.schedule-layout div.schedule-items-container:not(:first-of-type){
+    border-top: 1px solid #ffffff;
+    padding: 18px 0 18px 0;
+}
+
+.label-VIP{
+	background: black;
+    width: 85px;
+    font-size: 14px;
+    text-align: center;
+    font-family: Omnes_ATT-Medium;
+}
+
+.section-black .schedule-items-container p{
+	color: #ffffff;
+}
+
+.section-black .label-VIP{
+	color: #ffffff;
+	background: #009fdb;
 }
 
 /* Footer */
