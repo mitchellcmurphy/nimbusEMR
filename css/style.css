@@ -11,6 +11,12 @@ h1, h2, h3, h4, h5 {
 	text-transform: uppercase;
 }
 
+h1 {
+	color: #fff;
+	font-weight: 200;
+	font-size: 42px;
+}
+
 h2 {
 	font-size: 24px;
 	font-weight: 400;
@@ -48,22 +54,6 @@ p {
     padding-bottom: 8px;
 }
 
-.secondary-page-header{
-	display: flex;
-    align-items: center;
-    padding: 100px 0 20px 0;
-}
-
-.secondary-page-header>h3{
-	margin-left: 75px;
-    font-size: 36px;
-}
-
-.secondary-page-header>img{
-	width: 200px;
-    margin-left: auto;
-    margin-right: 75px;
-}
 
 /*Nav Bar Header*/
 
@@ -260,7 +250,22 @@ a.button:hover{
 	background-color: #009fdb;
 }
 
+/* Page Headers */
 
+.page-header {
+	height: 130px;
+}
+
+.page-header h1{
+	width: 30%;
+	float: left;
+	margin: 65px 0 0 0;
+}
+
+.page-header img{
+	float: right;
+	margin: 50px 0 0 0;
+}
 
 /* Home */
 .hero-overlay > img {
@@ -435,10 +440,6 @@ a.button:hover{
 
 	.section-black {
 		background-color: #000;
-	}
-
-	.section-black h1{
-		color: #fff;
 	}
 
 	.section-black p, .section-black  h2, .section-black  a, .section-black b, .section-black i {
