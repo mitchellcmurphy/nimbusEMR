@@ -58,6 +58,10 @@ p {
 	font-weight: bold;
 }
 
+.hide-element{
+	visibility: hidden;
+}
+
 
 /*Nav Bar Header*/
 
@@ -240,7 +244,8 @@ p {
 /* Buttons */
 .button {
 	padding: 17px 30px 13px 30px;
-	border: 4px solid #000;
+	border: 3px solid #000;
+	min-width: 250px;
 }
 
 a.button {
@@ -310,6 +315,10 @@ a.button:hover{
 	padding-bottom: 80px;
 }
 
+.end-padding-small{
+	padding-bottom: 48px;
+}
+
 .intro {
 	text-align: center;
 	padding: 80px 0 80px 0;
@@ -367,6 +376,10 @@ a.button:hover{
 		padding: 40px 0 80px 0;
 	}
 
+	.section-view-register {
+		text-align: center;
+		padding: 90px 0 90px 0;
+	}
 	/* Section Blue */
 
 	.section-blue {
@@ -838,6 +851,87 @@ a.button:hover{
 .section-black .category-details p{
 	color: #ffffff;
 }
+
+/*Exhibits*/
+.focus-area{
+	display: flex;
+}
+
+.focus-area-title-container{
+	text-transform: uppercase;
+	height: 209px;
+    width: 219px;
+    text-align: left;
+    font-size: 24px;
+    border: 5px solid #009fdb;
+    border-right: none;
+}
+
+.focus-area-title{
+	width: 167px;
+	font-family: .AppleSystemUIFont;
+	font-size: 20px;
+	color: #ffffff;
+	padding: 24px 20px 0 24px;
+}
+
+.focus-area-subtitle{
+	width: 167px;
+	height: 18px;
+	font-family: .AppleSystemUIFont;
+	font-size: 16px;
+	color: #3ea0d6;
+	padding: 0 20px 0 24px;
+}
+
+.focus-area-description{
+	border: 6px solid #009fdb;
+    text-align: left;
+    max-width: 657px;
+}
+
+.focus-area-description p{
+	color: #ffffff;
+	padding: 25px 32px 0 28px;
+}
+
+.exhibits-container{
+	border: 6px solid #009fdb;
+	border-top: none;
+    text-align: left;
+    max-width: 657px;
+}
+
+.focus-area-exhibits{
+    display: flex;
+    align-items: center;
+    font-family: Omnes_ATT-Medium;
+    border-top: solid 1px #ffffff;
+    margin: 0 42px 0 34px;
+}
+
+.focus-area-exhibits:first-of-type{
+	border-top: none;
+}
+
+.focus-area-exhibits img{
+	height: 34px;
+    width: 94px;
+}
+
+.exhibit-subtitle{
+	font-size: 16px;
+	color: #3ea0d6;
+	padding: 20px 45px 0 45px;
+}
+
+.exhibit-description{
+	color: #ffffff !important;
+	padding: 0 0 34px 45px;
+	font-size: 18px;
+	line-height: 18px;
+}
+
 
 /* Footer */
 .stayInTouch>label>input {
