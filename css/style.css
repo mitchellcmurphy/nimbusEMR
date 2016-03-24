@@ -54,6 +54,10 @@ p {
     padding-bottom: 8px;
 }
 
+.text-bold{
+	font-weight: bold;
+}
+
 
 /*Nav Bar Header*/
 
@@ -412,16 +416,20 @@ a.button:hover{
 		background-color: #fff;
 	}
 
-	.section-white h2, .section-white b, .section-white i {
+	.section-white b, .section-white i {
 		color: #fff;
 	}
 
-	.section-white p, .section-white a, .section-white h3 {
+	.section-white p, .section-white h3 {
 		color: #000;
 	}
 
-	.section-white .button{
-		border-color: #000;
+	.section-white h2{
+		color: #009fdb;
+	}
+
+	.section-white a, .section-white .button{
+		border-color: #009fdb;
 	}
 
 	.section-white h3.subtitle{
@@ -429,6 +437,13 @@ a.button:hover{
 		border-bottom: solid 1px #000;
 		font-size: 24px;
 		padding-top: 80px;
+		margin: 0 auto 43px auto;
+	}
+
+	.section-white h2.subtitle{
+		text-align: left;
+		border-bottom: solid 1px #009fdb;
+		font-size: 24px;
 		margin: 0 auto 43px auto;
 	}
 
@@ -740,6 +755,88 @@ a.button:hover{
 .section-black .label-VIP{
 	color: #ffffff;
 	background: #009fdb;
+}
+
+/*Challenge*/
+.tile-with-description{
+	display: flex;
+}
+
+.tile-with-description img {
+	width: 325px;
+	height: 325px;
+}
+
+.tile-with-description div {
+	border: 6px solid #ffffff;
+	border-left: none;
+	max-width: 541px;
+	padding: 28px 27px 38px 23px;
+}
+
+.section-black .tile-with-description div {
+	border: 6px solid #009fdb;
+	border-left: none;
+}
+
+.tile-with-description p {
+	padding-bottom: 10px;
+	font-size: 18px;
+	line-height: 27px;
+}
+
+.categories-layout{
+	display: flex;
+}
+
+.categories-layout img{
+	height: 219px;
+	width: 654px;
+}
+
+.category-title{
+	text-transform: uppercase;
+	height: 209px;
+    width: 219px;
+    text-align: left;
+    font-size: 24px;
+    border: 5px solid #009fdb;
+    border-right: none;
+}
+
+.category-title span{
+	padding: 20px;
+    position: absolute;
+    word-wrap: break-word;
+    width: 219px;
+}
+
+.category-details{
+	border: 5px solid #009fdb;
+    border-top: none;
+    text-align: left;
+}
+
+.category-details div:first-of-type{
+	padding: 27.4px 26.5px 64px 25px;
+}
+
+.category-details p>span{
+	display: block;
+}
+
+.section-black .category-title{
+	border: 5px solid #ffffff;
+	color: #ffffff;
+}
+
+.section-black .category-details{
+	border: 5px solid #ffffff;
+	border-top: none;
+}
+
+.section-black .category-details p{
+	color: #ffffff;
 }
 
 /* Footer */
