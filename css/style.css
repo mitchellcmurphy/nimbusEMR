@@ -468,6 +468,16 @@ a.button:hover{
 		border-color: #009fdb;
 	}
 
+	.section-white .button{
+		border-color: #000;
+		color: #000;
+	}
+
+	.section-white .button:hover{
+		color: #ffffff;
+		background-color: #000;		
+	}
+
 	.section-white h3.subtitle{
 		text-align: left;
 		border-bottom: solid 1px #000;
@@ -982,6 +992,10 @@ a.button:hover{
 	color: #000;
 }
 
+.judging-criteria-rounds{
+	max-width: 384px;
+}
+
 .judging-criteria-rounds .round{
 	width: 167px;
 	height: 18px;
@@ -992,6 +1006,21 @@ a.button:hover{
 
 .judging-criteria-rounds p{
 	color: #ffffff;
+	padding-bottom: 45px
+}
+
+.judging-criteria-percentage{
+	display: flex;
+	padding-bottom: 25px;
+}
+
+.judging-criteria-percentage img{
+	width: 59px;
+	height: 59px;
+}
+
+.judging-criteria-percentage p{
+	padding-left: 10px;
 }
 
 /* Footer */
