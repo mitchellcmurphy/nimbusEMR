@@ -20,6 +20,7 @@ h1 {
 h2 {
 	font-size: 24px;
 	font-weight: 400;
+	padding: 80px 0 40px 0;
 }
 
 h3 {
@@ -65,6 +66,10 @@ p {
 .section-paragraph{
     text-align: left;
     padding: 70px 20px 70px 20px;
+}
+
+.centerContent{
+	text-align: center;
 }
 
 /*Nav Bar Header*/
@@ -355,6 +360,7 @@ a.button:hover{
 #home .section-blue h2 {
 	text-align: center;
 	padding: 80px 0 80px 0;
+	border-bottom: 0;
 }
 
 @media (max-width: 920px){
@@ -617,31 +623,17 @@ a.button:hover{
 	}
 
 /*Speakers*/
-.centerContent{
-	text-align: center;
-}
-
-.speakers-key-header{
-	text-align: left;
-	max-width: 860px;
-	border-bottom: solid 1px #ffffff;
-	color: #fff;
-	font-size: 24px;
-	padding-top: 80px;
-	margin: 0 auto 43px auto;
-}
 
 .speakers-key-container{
 	display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: stretch;
     max-width: 860px;
     margin: 0 auto 0 auto;
     padding-bottom: 77px;
 }
 
 .speaker-key-container{
-	margin: 10px;
 }
 
 .speaker-key-container>img{
