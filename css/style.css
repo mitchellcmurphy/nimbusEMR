@@ -67,6 +67,12 @@ p {
     padding: 70px 20px 70px 20px;
 }
 
+.flex-box{
+	display: -webkit-flex;
+	display: flex;
+	justify-content: space-between;
+}
+
 /*Nav Bar Header*/
 
 .logo img {
@@ -323,6 +329,10 @@ a.button:hover{
 	padding-bottom: 48px;
 }
 
+.end-padding-tiny{
+	padding-bottom: 23px;
+}
+
 .intro {
 	text-align: center;
 	padding: 80px 0 80px 0;
@@ -425,6 +435,15 @@ a.button:hover{
 		font-size: 24px;
 		padding-top: 80px;
 		margin: 0 auto 43px auto;
+	}
+
+	.section-black h2.subtitle-small-margin{
+		color: #ffffff;
+		text-align: left;
+		border-bottom: solid 1px #ffffff;
+		font-size: 24px;
+		padding-top: 80px;
+		margin: 0 auto 20px auto;
 	}
 
 	/* Section White */
@@ -936,6 +955,44 @@ a.button:hover{
 	line-height: 18px;
 }
 
+/*Hackathon*/
+.tile-prize{
+	border: 4px solid #ffffff;
+	height: 134px;
+	width: 262px;
+}
+
+.challenge-container{
+	flex-wrap: wrap;
+}
+
+.tile-challenge{
+	background-color: #ffffff;
+	max-width: 412px;
+	max-height: 260px;
+	margin-bottom: 41px;
+}
+
+.tile-challenge h3{
+	padding: 33px 20px 0 24px;
+}
+
+.tile-challenge p{
+	padding: 0 20px 35px 24px;
+	color: #000;
+}
+
+.judging-criteria-rounds .round{
+	width: 167px;
+	height: 18px;
+	font-family: .AppleSystemUIFont;
+	font-size: 16px;
+	color: #3ea0d6;
+}
+
+.judging-criteria-rounds p{
+	color: #ffffff;
+}
 
 /* Footer */
 .stayInTouch>label>input {
@@ -1039,7 +1096,7 @@ footer p {
 /* Overrides */
 
 .color-white {
-	color: #fff;
+	color: #fff !important;
 }
 
 .color-blue {
