@@ -20,7 +20,9 @@ h1 {
 h2 {
 	font-size: 24px;
 	font-weight: 400;
-	padding: 80px 0 40px 0;
+	padding: 80px 0 0 0;
+	border-bottom: 1px solid #fff;
+	margin-bottom: 40px;
 }
 
 h3 {
@@ -68,15 +70,14 @@ p {
     padding: 70px 20px 70px 20px;
 }
 
-<<<<<<< HEAD
 .centerContent{
 	text-align: center;
-=======
+}
+
 .flex-box{
 	display: -webkit-flex;
 	display: flex;
 	justify-content: space-between;
->>>>>>> 9eb5940fc7d7551d14491f24ae436ed2633f69e3
 }
 
 /*Nav Bar Header*/
@@ -139,6 +140,7 @@ p {
   line-height: 32px;
 }
 
+
 .navbar-full > li > a{
   display: block;
   color: white;
@@ -150,6 +152,17 @@ p {
 .alwaysHover, .navbar-full > li.dropdown:hover > a{
   background-color: #00a3e0;
 }
+
+.dropdown-menu {
+	padding: 0;
+	margin: 0;
+	border-bottom: 1px solid rgba(0,0,0,.1);
+}
+
+.dropdown-menu li {
+	text-indent: 10px;
+}
+
 
 @media (min-width: 1015px){
 	.navbar-full{
@@ -163,11 +176,11 @@ p {
   .navbar-full > li.dropdown .dropdown-menu { 
 /*    visibility: hidden; */
     position: absolute;
-    width: 100%; 
     text-align: center; 
     left:0; 
     right:0; 
     background-color: #00a3e0;
+    z-index: 100;
   }
 
   .dropdown-menu>li { 
@@ -198,7 +211,7 @@ p {
 		float: right;
 	}
 
-  .navbar-full{
+  	.navbar-full{
 		display: none;
 		float: none;
 		margin-left: none;
@@ -289,7 +302,8 @@ a.button:hover{
 
 .page-header img{
 	float: right;
-	margin: 50px 0 0 0;
+	margin: 60px 0 0 0;
+	width: 150px;
 }
 
 /* Home */
@@ -407,8 +421,12 @@ a.button:hover{
 		background-color: #009fdb;
 	}
 
-	.section-blue p, .section-blue h2, .section-blue a, .section-blue b, .section-blue i {
+	.section-blue p, .section-blue h2, .section-blue h3, .section-blue h4, .section-blue a, .section-blue b, .section-blue i {
 		color: #fff;
+	}
+
+	.section-blue h3 {
+		color: #000;
 	}
 
 	.section-blue h3 {
@@ -468,6 +486,11 @@ a.button:hover{
 	}
 
 	.section-white h2{
+		color: #000;
+		border-bottom-color: #000;
+	}
+
+	.section-white h4{
 		color: #009fdb;
 	}
 
@@ -510,7 +533,7 @@ a.button:hover{
 		background-color: #000;
 	}
 
-	.section-black p, .section-black  h2, .section-black  a, .section-black b, .section-black i {
+	.section-black p, .section-black  h2, .section-black h4, .section-black  a, .section-black b, .section-black i {
 		color: #009fdb;;
 	}
 
@@ -525,10 +548,6 @@ a.button:hover{
 		border-color: #009fdb;
 	}
 
-	.section-black .speaker-name, .section-black .speakers-additional p{
-		color: #ffffff;
-	}
-
 	/* Section Gray */
 
 	.section-gray {
@@ -537,6 +556,10 @@ a.button:hover{
 
 	.section-gray p, .section-gray  h2, .section-gray  a, .section-gray b, .section-gray i {
 		color: #000;
+	}
+
+	.section-gray h2{
+		border: 0;
 	}
 
 	.section-gray a {
@@ -655,50 +678,58 @@ a.button:hover{
 /*Speakers*/
 
 .speakers-key-container{
+	padding-bottom: 40px;
+	display: -webkit-flex;
 	display: flex;
-    flex-wrap: wrap;
-    justify-content: stretch;
-    max-width: 860px;
-    margin: 0 auto 0 auto;
-    padding-bottom: 77px;
+	justify-content: flex-start;
 }
 
-.speaker-key-container{
+.speakers-key-container div{
+	width: 20%;
+	position: relative;
+	margin-right: 10px;
 }
 
-.speaker-key-container>img{
+.speakers-key-container h4 span {
+	display: block;
+	width: 100%;
+	padding: 0 0 5px 0;
+}
+
+
+.speakers-key-container div:last-child{
+  margin-right: 0;
+}
+
+
+.speakers-key-container div a{
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 2;
+}
+
+.speakers-key-container div>img{
 	width: 150px;
 	height: 150px;
 }
 
-.speaker-key-container>div{
-	text-align: left;
-	font-weight: 18px;
-}
-
-.speakers-additional-header{
-	text-align: left;
-    max-width: 860px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 40px;
-}
-
-.speakers-additional-list{
-	list-style: none;
-}
-
-.speakers-additional-container{
-	max-width: 860px;
-	margin-left: auto;
-    margin-right: auto;
-}
-
 .speakers-additional{
-	overflow: hidden;
-	border-top: solid 1px black;
-    padding: 40px 0 40px 0;
-    max-width: 860px;
+	list-style: none;
+	margin: 0;
+    padding: 0;
+}
+
+.speakers-additional li{
+	padding-bottom: 40px;
+	margin-bottom: 40px;
+	border-bottom: 1px solid #000;
+}
+
+.speakers-additional li:last-child{
+	border-bottom: 0;
 }
 
 .speakers-additional img{
@@ -708,24 +739,78 @@ a.button:hover{
 	margin-right: 20px;
 }
 
-.speakers-additional p{
-	text-align: left;
-	font-size: 18px;
-	max-width: 727px;
-	padding: 5px 0 0 120px;
-	line-height: 27px;
+.speaker-key-tile {
+	border: 6px solid #fff;
+	overflow: hidden;
+	margin: 80px 0 80px 0;
 }
 
-.speaker-name{
-	color: black;
-	text-align: left;
-	font-size: 24px;
+.speaker-key-tile p{
+	display: inline-block;
+	color: #fff;
+	padding: 20px;
 }
 
-.speaker-title{
-	color: #3ea0d6;
-	text-align: left;
+.speaker-key-tile .title{
+	position: relative;
+    box-sizing: border-box;
+	width: 50%;
+	float: left;
+	height: 425px;
+	border-bottom: 6px solid #fff;
+	overflow: hidden;
 }
+
+.speaker-key-tile .title span{
+	display: block;
+	margin: 20px;
+}
+
+
+.speaker-key-tile .title img{
+	width: 100%;
+}
+
+.speaker-key-tile-overlay{
+	position: absolute;
+    box-sizing: border-box;
+    top: -6px;
+	right: 0;
+	bottom: 0;
+	left: -6px;
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+.speakers-key-tiles .speaker-key-tile:nth-of-type(2n) .title{
+	float: right;
+}
+
+.speakers-key-tiles .speaker-key-tile:nth-of-type(2n) .title span{
+	margin: 23px 0 0 26px;
+}
+
+
+.speakers-key-tiles .speaker-key-tile:nth-of-type(2n) .speaker-key-tile-overlay{
+	left: 0;
+	right: -6px;
+}
+
+.speaker-key-tile-overlay-1{
+	background-image: url('../images/tiles/key-speakers1.png');
+}
+
+.speaker-key-tile-overlay-2{
+	background-image: url('../images/tiles/key-speakers2.png');
+}
+
+.speaker-key-tile-overlay-3{
+	background-image: url('../images/tiles/key-speakers3.png');
+}
+
+
+
+
 
 /*Sponsors*/
 .sponsors-text{
@@ -780,11 +865,10 @@ a.button:hover{
 }
 
 .label-VIP{
-	background: black;
-    width: 85px;
+	background-color: black;
+    width: 80px;
     font-size: 14px;
     text-align: center;
-    font-family: Omnes_ATT-Medium;
 }
 
 .section-black .schedule-items-container p{
