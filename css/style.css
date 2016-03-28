@@ -1088,9 +1088,20 @@ a.button:hover{
 	right: 0;
 	bottom: 0;
 	left: -6px;
-	background-image: url('../images/tiles/exhibit.png');
 	background-repeat: no-repeat;
     background-size: 100%;
+}
+
+.detail-hero-overlay-1 {
+	background-image: url('../images/tiles/overlay1.png');
+}
+
+.detail-hero-overlay-2 {
+	background-image: url('../images/tiles/overlay2.png');
+}
+
+.detail-hero-overlay-3 {
+	background-image: url('../images/tiles/overlay3.png');
 }
 
 /* Maker Camp Live */
@@ -1098,16 +1109,17 @@ a.button:hover{
 .project {
 	width: 100%;
 	overflow: hidden;	
-	height: 210px;
+	height: 217px;
 	border: 6px solid #009fdb;
     box-sizing: border-box;
+    margin-bottom: 40px;
 }
 
 .project-title {
 	float: left;
 	width: 25%;
-	height: 210px;
 	padding: 20px;
+	height: inherit;
 	border-right: 6px solid #009fdb;
     box-sizing: border-box;
     position: relative;
@@ -1115,14 +1127,13 @@ a.button:hover{
 
 .project-title h5{
 	position: absolute;
-	bottom: 30px;
+	bottom: 20px;
 }
 
 .project-image {
 	position: relative;
 	float: left;
 	width: 25%;
-	height: 210px;
 }
 
 .project-image-overlay {
@@ -1131,16 +1142,36 @@ a.button:hover{
 	right: 0;
 	bottom: 0;
 	left: -6px;
-	background-image: url('../images/tiles/overlay-projects.png');
+	height: inherit;
 	background-repeat: no-repeat;
     background-size: 100%;
 }
 
+.project-image-overlay-1{
+	background-image: url('../images/tiles/overlay-projects.png');
+}
+
+.project-image-overlay-2{
+	background-image: url('../images/tiles/overlay-projects2.png');
+}
+
+.project-image-overlay-3{
+	background-image: url('../images/tiles/overlay-projects3.png');
+}
+
 .project-info {
-	height: 210px;
 	width: 50%;
 	float: left;
     box-sizing: border-box;
+}
+
+.faq {
+	padding-bottom: 40px;
+}
+
+.faq b{
+	color: #009fdb;
+	font-size: 18px;
 }
 
 /*Exhibits*/
@@ -1273,7 +1304,7 @@ a.button:hover{
 
 .judging-criteria-percentage p{
 	padding-left: 10px;
-}2
+}
 
 /* Footer */
 .stayInTouch>label>input {
@@ -1317,7 +1348,7 @@ a.button:hover{
 
 .sponsorButtons{
 	text-align: center;
-	padding-bottom: 120px;
+	padding-bottom: 40px;
 }
 
 .button-social{
@@ -1354,13 +1385,14 @@ footer {
 
 footer h2{
 	text-align: center;
-	padding: 80px 0 40px 0;
 }
 
 footer form {
 	text-align: center;
 	padding: 0 0 40px 0;
 }
+
+
 
 img.footer-logo {
 	display: block;
