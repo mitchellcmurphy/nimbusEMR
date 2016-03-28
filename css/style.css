@@ -323,6 +323,13 @@ p {
 	display: inline-block;
 }
 
+.button-center {
+	margin: 0 auto;
+	display: block;
+	max-width: 300px;
+	text-align: center;
+}
+
 a.button {
 	text-transform: uppercase;
 	font-size: 16px;
@@ -525,9 +532,9 @@ a.button:hover{
 		background-color: #fff;
 	}
 
-	.section-white b, .section-white i {
+	/* .section-white b, .section-white i {
 		color: #fff;
-	}
+	} */
 
 	.section-white p, .section-white h3 {
 		color: #000;
@@ -547,13 +554,13 @@ a.button:hover{
 	}
 
 	.section-white .button{
-		border-color: #000;
-		color: #000;
+		border-color:  #009fdb;
+		color:  #009fdb;
 	}
 
 	.section-white .button:hover{
 		color: #ffffff;
-		background-color: #000;		
+		background-color:  #009fdb;		
 	}
 
 	.section-white h3.subtitle{
@@ -972,86 +979,61 @@ a.button:hover{
 }
 
 /*Challenge*/
-.tile-with-description{
-	display: flex;
-}
 
-.tile-with-description img {
-	width: 325px;
-	height: 325px;
-}
-
-.tile-with-description div {
-	border: 6px solid #ffffff;
-	border-left: none;
-	max-width: 541px;
-	padding: 28px 27px 38px 23px;
-}
-
-.section-black .tile-with-description div {
+.challenge-category {
 	border: 6px solid #009fdb;
-	border-left: none;
+    box-sizing: border-box;
+    overflow: hidden;
+    margin: 80px 0 40px 0;
 }
 
-.tile-with-description p {
-	padding-bottom: 10px;
-	font-size: 18px;
-	line-height: 27px;
+.challenge-category-white {
+	border-color: #fff;
 }
 
-.categories-layout{
-	display: flex;
+.challenge-category-white p, .challenge-category-white b{
+	color: #fff;
 }
 
-.categories-layout img{
-	height: 219px;
-	width: 654px;
+.challenge-category-title{
+	position: relative;
+    width: 100%;
+   	height: 214px;
 }
 
-.category-title{
-	text-transform: uppercase;
-	height: 209px;
-    width: 219px;
-    text-align: left;
-    font-size: 24px;
-    border: 5px solid #009fdb;
-    border-right: none;
-}
-
-.category-title span{
-	padding: 20px;
-    position: absolute;
-    word-wrap: break-word;
-    width: 219px;
-}
-
-.category-details{
-	border: 5px solid #009fdb;
-    border-top: none;
-    text-align: left;
-}
-
-.category-details div:first-of-type{
-	padding: 27.4px 26.5px 64px 25px;
-}
-
-.category-details p>span{
+.challenge-category-title h3{
+	max-width: 25%;
 	display: block;
+	padding: 20px;
 }
 
-.section-black .category-title{
-	border: 5px solid #ffffff;
-	color: #ffffff;
+
+.challenge-overlay {
+	position: absolute;
+	top: -6px;
+	right: -6px;
+	bottom: 0;
+	left: -6px;
+	background-repeat: no-repeat;
+    background-size: 100%;
 }
 
-.section-black .category-details{
-	border: 5px solid #ffffff;
-	border-top: none;
+.challenge-overlay-1 {
+	background-image: url('../images/tiles/overlay-challenge1.png');
 }
 
-.section-black .category-details p{
-	color: #ffffff;
+.challenge-overlay-2 {
+	background-image: url('../images/tiles/overlay-challenge2.png');
 }
+
+.challenge-overlay-3 {
+	background-image: url('../images/tiles/overlay-challenge3.png');
+}
+
+.challenge-category-info{
+	padding: 20px;
+}
+
 
 /*Exhibit & Maker Camp Live Intros */
 
@@ -1062,6 +1044,14 @@ a.button:hover{
     overflow: hidden;
     height: 306px;
     margin-bottom: 80px;
+}
+
+.detail-hero-blue {
+	border-color: #009fdb;
+}
+
+.detail-hero-blue p{
+	color: #009fdb !important;
 }
 
 .detail-hero-image {
@@ -1106,6 +1096,10 @@ a.button:hover{
 
 .detail-hero-overlay-3 {
 	background-image: url('../images/tiles/overlay3.png');
+}
+
+.detail-hero-overlay-4 {
+	background-image: url('../images/tiles/overlay4.png');
 }
 
 /* Maker Camp Live */
