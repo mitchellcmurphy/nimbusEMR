@@ -188,6 +188,9 @@ p {
 	text-indent: 10px;
 }
 
+.nav-up{
+	top: -60px;
+}
 
 @media (min-width: 1015px){
 	.navbar-full{
@@ -237,6 +240,7 @@ p {
 		background-color: black;
 		display: inline-block;
     	width: 100%;
+    	position: fixed;
 	}
 
 	#menuIcon{
