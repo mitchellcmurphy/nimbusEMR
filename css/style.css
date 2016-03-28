@@ -36,6 +36,15 @@ h4 {
 	padding-bottom: 10px;
 }
 
+h4 span {
+	display: inline-block;
+	width: 100%;
+}
+
+h5 {
+	color: #EA7400;
+}
+
 @media (max-width: 1015px){
 	h2{
 		font-size: 18px;
@@ -89,14 +98,10 @@ p {
 	justify-content: space-between;
 }
 
-.position-relative{
-	position: relative;
-}
-
 .font-large{
 	font-size: 36px;
 	line-height: 48px;
-	font-family: Omnes_ATT-Regular;
+	font-weight: 200;
 }
 
 /*Nav Bar Header*/
@@ -310,7 +315,6 @@ p {
 .button {
 	padding: 17px 30px 13px 30px;
 	border: 3px solid #000;
-	min-width: 250px;
 	display: inline-block;
 }
 
@@ -402,7 +406,7 @@ a.button:hover{
 }
 
 .intro {
-	padding: 80px 0 80px 0;
+	padding: 80px 0 40px 0;
 }
 
 .intro img {
@@ -1044,8 +1048,9 @@ a.button:hover{
 	color: #ffffff;
 }
 
-/*Exhibits*/
-.exhibits-hero {
+/*Exhibit & Maker Camp Live Intros */
+
+.detail-hero {
 	border: 6px solid #fff;
     box-sizing: border-box;
     width: 100%;
@@ -1054,28 +1059,29 @@ a.button:hover{
     margin-bottom: 80px;
 }
 
-.exhibits-hero-image {
+.detail-hero-image {
 	position: relative;
 	width: 300px;
 	height: 300px;
 	float: left;
 }
 
-.exhibits-hero-image img {
+.detail-hero-image img, .project-image img {
 	width: 100%;
 	display: block;
 }
 
-.exhibits-hero-info {
+.detail-hero-info {
 	float: left;
 	width: 540px;
 }
 
-.exhibits-hero-info p {
-	padding: 20px;
+.detail-hero-info p, .project-info p {
+	padding: 16px 20px 20px 20px;
+	color: #fff;
 }
 
-.exhibits-hero-overlay {
+.detail-hero-overlay {
 	position: absolute;
 	top: -6px;
 	right: 0;
@@ -1085,6 +1091,58 @@ a.button:hover{
 	background-repeat: no-repeat;
     background-size: 100%;
 }
+
+/* Maker Camp Live */
+
+.project {
+	width: 100%;
+	overflow: hidden;	
+	height: 210px;
+	border: 6px solid #009fdb;
+    box-sizing: border-box;
+}
+
+.project-title {
+	float: left;
+	width: 25%;
+	height: 210px;
+	padding: 20px;
+	border-right: 6px solid #009fdb;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.project-title h5{
+	position: absolute;
+	bottom: 30px;
+}
+
+.project-image {
+	position: relative;
+	float: left;
+	width: 25%;
+	height: 210px;
+}
+
+.project-image-overlay {
+	position: absolute;
+	top: -6px;
+	right: 0;
+	bottom: 0;
+	left: -6px;
+	background-image: url('../images/tiles/overlay-projects.png');
+	background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.project-info {
+	height: 210px;
+	width: 50%;
+	float: left;
+    box-sizing: border-box;
+}
+
+/*Exhibits*/
 
 .focus-area {
 	width: 100%;
@@ -1217,40 +1275,7 @@ a.button:hover{
 }
 
 /*Maker Camp Live*/
-.project{
-	display: flex;
-}
 
-.project img{
-	width: 211px;
-	height: 211px;
-}
-
-.requirements{
-	color: #ea7400;
-	text-transform: uppercase;
-	padding: 0 20px 0 24px;
-	font-size: 16px;
-	position: absolute;
-	bottom: 0;
-}
-
-.project-description{
-	border: 6px solid #009fdb;
-	border-left: none;
-    text-align: left;
-    max-width: 438px;
-}
-
-.project-description p{
-	color: #ffffff;
-	padding: 25px 32px 0 28px;
-}
-
-.paragraph-subtitle{
-	color: #009fdb !important;
-	padding-bottom: 10px;
-}
 
 /* Footer */
 .stayInTouch>label>input {
@@ -1298,6 +1323,7 @@ a.button:hover{
 }
 
 .button-social{
+	display: inline;
 	height: 55px;
 	width: 55px;
 	margin-left: 10px;
