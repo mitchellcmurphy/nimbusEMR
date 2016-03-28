@@ -1,7 +1,7 @@
 @import url("fonts.css");
 
 /* Resets*/
-body, section, h1, h2, h3, h4, h5, h6, p {
+body, section, h1, h2, h3, h4, h5, h6, p, ul {
 	margin: 0;
 	padding: 0;
 }
@@ -210,9 +210,18 @@ p {
   	text-decoration: none;
   	padding: 0 10px 0 10px;
   }
+
+  .menu-filler{
+  	display: none;
+  }
 }
 
 @media (max-width: 1015px){
+	.section-centering{
+		padding-right: 10px;
+		padding-left: 10px;
+	}
+
 	.logo img {
 		width: 200px;
 		margin: 15px 0 0 20px;
@@ -237,9 +246,12 @@ p {
 		list-style: none;
 		margin: 0;
 		padding: 0;
-		position: relative;
-		width: 100%;
-		z-index: 100;
+		position: fixed;
+	    width: 100%;
+	    z-index: 100;
+	    height: 100%;
+	    left: 0px;
+	    top: 70px;
 	}
 
 	.navbar-full > li{
@@ -264,6 +276,11 @@ p {
     right:0; 
     background-color: #00a3e0;
     height: 30px; 
+  }
+
+  .menu-filler{
+  	display: block;
+  	height: 300px;
   }
 }
 
@@ -375,9 +392,7 @@ a.button:hover{
 	float: left;
 }
 
-.end-padding{
-	padding-bottom: 80px;
-}
+
 
 .end-padding-small{
 	padding-bottom: 48px;
@@ -580,6 +595,10 @@ a.button:hover{
 
 	.section-black p, .section-black  h2, .section-black h4, .section-black  a, .section-black b, .section-black i {
 		color: #009fdb;;
+	}
+
+	.section-black h2{
+		border-bottom-color: #009fdb;;
 	}
 
 	.section-black h3 {
@@ -1048,84 +1067,107 @@ a.button:hover{
 }
 
 /*Exhibits*/
-.focus-area{
-	display: flex;
+.exhibits-hero {
+	border: 6px solid #fff;
+    box-sizing: border-box;
+    width: 100%;
+    overflow: hidden;
+    height: 306px;
+    margin-bottom: 80px;
 }
 
-.focus-area-title-container{
-	text-transform: uppercase;
-	height: 209px;
-    width: 219px;
-    text-align: left;
-    font-size: 24px;
-    border: 5px solid #009fdb;
-    border-right: none;
+.exhibits-hero-image {
+	position: relative;
+	width: 300px;
+	height: 300px;
+	float: left;
+}
+
+.exhibits-hero-image img {
+	width: 100%;
+	display: block;
+}
+
+.exhibits-hero-info {
+	float: left;
+	width: 540px;
+}
+
+.exhibits-hero-info p {
+	padding: 20px;
+}
+
+.exhibits-hero-overlay {
+	position: absolute;
+	top: -6px;
+	right: 0;
+	bottom: 0;
+	left: -6px;
+	background-image: url('../images/tiles/exhibit.png');
+	background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.focus-area {
+	width: 100%;
+	border: 6px solid #009fdb;
+    box-sizing: border-box;
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+
+.focus-area p, .focus-area-exhibits p{
+	color: #fff;
 }
 
 .focus-area-title{
-	width: 167px;
-	font-family: .AppleSystemUIFont;
-	font-size: 20px;
-	color: #ffffff;
-	padding: 24px 20px 0 24px;
+	width: 180px;
+	height: 200px;
+	display: block;
+	border-right: 6px solid #009fdb;
+	float: left;
+	padding: 20px 0 0 20px;
 }
 
-.focus-area-subtitle{
-	width: 167px;
-	height: 18px;
-	font-family: .AppleSystemUIFont;
-	font-size: 16px;
-	color: #3ea0d6;
-	padding: 0 20px 0 24px;
+.focus-area-info {
+	margin-left: 210px;
 }
 
-.focus-area-description{
-	border: 6px solid #009fdb;
-    text-align: left;
-    max-width: 657px;
+.focus-area-info p{
+	padding: 20px 0 0 20px;
+	display: block;
 }
 
-.focus-area-description p{
-	color: #ffffff;
-	padding: 25px 32px 0 28px;
+.focus-area-exhibits {
+	border-right: 6px solid #009fdb;
+	border-bottom: 6px solid #009fdb;
+	border-left: 6px solid #009fdb;
+    box-sizing: border-box;
+    margin: -40px 0 40px 205px;
+ }
+
+.focus-area-exhibits li {
+ 	padding: 20px 0 20px 0;
+ 	margin: 0 20px 0 20px;
+ 	border-bottom: solid 1px rgba(255,255,255,.3);
+ 	display: flex;
+ 	object-fit: contain;
 }
 
-.exhibits-container{
-	border: 6px solid #009fdb;
-	border-top: none;
-    text-align: left;
-    max-width: 657px;
+.focus-area-exhibits li:last-child {
+ 	border-bottom: 0;
 }
 
-.focus-area-exhibits{
-    display: flex;
-    align-items: center;
-    font-family: Omnes_ATT-Medium;
-    border-top: solid 1px #ffffff;
-    margin: 0 42px 0 34px;
+.focus-area-exhibits li span{
+	width: 100px;
+	padding: 10px;
+	margin: 22px 30px 0 0
+}
+.focus-area-exhibits li span img{
+	width: 100%;
 }
 
-.focus-area-exhibits:first-of-type{
-	border-top: none;
-}
 
-.focus-area-exhibits img{
-	height: 34px;
-    width: 94px;
-}
-
-.exhibit-subtitle{
-	font-size: 16px;
-	color: #3ea0d6;
-	padding: 20px 45px 0 45px;
-}
-
-.exhibit-description{
-	color: #ffffff !important;
-	padding: 0 0 34px 45px;
-	font-size: 18px;
-	line-height: 18px;
-}
 
 /*Hackathon*/
 .tile-prize{
