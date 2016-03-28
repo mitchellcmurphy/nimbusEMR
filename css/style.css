@@ -79,7 +79,7 @@ p {
     padding: 70px 20px 70px 20px;
 }
 
-.centerContent{
+.center-text{
 	text-align: center;
 }
 
@@ -313,6 +313,7 @@ p {
 	padding: 17px 30px 13px 30px;
 	border: 3px solid #000;
 	min-width: 250px;
+	display: inline-block;
 }
 
 a.button {
@@ -329,19 +330,18 @@ a.button:hover{
 /* Page Headers */
 
 .page-header {
-	height: 130px;
 }
 
 .page-header h1{
 	width: 50%;
 	float: left;
-	margin: 65px 0 0 0;
+	margin: 60px 0 10px 0;
 }
 
 .page-header img{
 	float: right;
-	margin: 60px 0 0 0;
-	width: 150px;
+	margin: 50px 0 0 0;
+	width: 140px;
 }
 
 @media (max-width: 1015px){
@@ -394,28 +394,19 @@ a.button:hover{
 	float: left;
 }
 
-
-
 .end-padding-small{
 	padding-bottom: 48px;
 }
 
-.end-padding-tiny{
-	padding-bottom: 23px;
-}
 
 .top-padding-tiny{
 	padding-top: 35px;
 }
 
 .intro {
-	text-align: center;
 	padding: 80px 0 80px 0;
 }
 
-.intro p{
-	padding: 0 0 20px 0;
-}
 .intro img {
 	margin: 0 auto;
 }
@@ -439,7 +430,7 @@ a.button:hover{
 
 #home .section-blue h2 {
 	text-align: center;
-	padding: 80px 0 80px 0;
+	padding: 80px 0 40px 0;
 	border-bottom: 0;
 }
 
@@ -454,6 +445,11 @@ a.button:hover{
 
 	section{
 		overflow: hidden;
+		padding-bottom: 40px;
+	}
+	
+	.section-0-padding{
+		padding-bottom: 0
 	}
 
 	.section-centering{
@@ -505,23 +501,6 @@ a.button:hover{
 	.section-blue .button:hover{
 		color: #009fdb;
 		background-color: #fff;		
-	}
-
-	.section-blue h2.subtitle{
-		text-align: left;
-		border-bottom: solid 1px #ffffff;
-		font-size: 24px;
-		padding-top: 80px;
-		margin: 0 auto 43px auto;
-	}
-
-	.section-black h2.subtitle{
-		color: #ffffff;
-		text-align: left;
-		border-bottom: solid 1px #ffffff;
-		font-size: 24px;
-		padding-top: 80px;
-		margin: 0 auto 43px auto;
 	}
 
 	.section-black h2.subtitle-small-margin{
@@ -744,7 +723,6 @@ a.button:hover{
 /*Speakers*/
 
 .speakers-key-container{
-	padding-bottom: 40px;
 	display: -webkit-flex;
 	display: flex;
 	justify-content: flex-start;
@@ -1169,13 +1147,19 @@ a.button:hover{
 	width: 100%;
 }
 
-
-
 /*Hackathon*/
+.prizes {
+	display: flex;
+	justify-content: space-between;
+	margin: 10px 0 40px 0;
+}
+
 .tile-prize{
-	border: 4px solid #ffffff;
+	border: 6px solid #ffffff;
+    box-sizing: border-box;	
 	height: 134px;
 	width: 262px;
+	padding: 10px;
 }
 
 .challenge-container{
@@ -1186,15 +1170,20 @@ a.button:hover{
 	background-color: #ffffff;
 	max-width: 412px;
 	max-height: 260px;
-	margin-bottom: 41px;
+	margin-bottom: 40px;
 }
 
 .tile-challenge h3{
-	padding: 33px 20px 0 24px;
+	padding: 20px 0 0 20px;
+}
+
+.tile-challenge h4{
+	padding: 0 0 0 20px;
+	color: #000;
 }
 
 .tile-challenge p{
-	padding: 0 20px 35px 24px;
+	padding: 20px 20px 30px 20px;
 	color: #000;
 }
 
