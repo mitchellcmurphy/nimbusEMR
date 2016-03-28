@@ -216,7 +216,15 @@ p {
   }
 }
 
+.nav-up {
+    top: -60px;
+}
+
 @media (max-width: 1015px){
+	.mobile-padding-top{
+		padding-top: 60px;
+	}
+
 	.section-centering{
 		padding-right: 10px;
 		padding-left: 10px;
@@ -231,6 +239,8 @@ p {
 		background-color: black;
 		display: inline-block;
     	width: 100%;
+    	position: fixed;
+    	transition: top 0.2s ease-in-out;
 	}
 
 	#menuIcon{
@@ -251,21 +261,13 @@ p {
 	    z-index: 100;
 	    height: 100%;
 	    left: 0px;
-	    top: 70px;
+	    top: 60px;
 	}
 
 	.navbar-full > li{
 	  line-height: 60px;
 	  background-color: #000;
 	}
-
-/* 	.navbar-full > li > a{
-	  display: block;
-	  color: white;
-	  text-align: center;
-	  padding: 14px 16px;
-	  text-decoration: none;
-	} */
 
   .navbar-full > li.dropdown .dropdown-menu { 
     position: absolute;
