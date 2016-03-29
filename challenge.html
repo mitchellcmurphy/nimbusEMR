@@ -10,7 +10,7 @@
 	    <link rel="stylesheet" href="css/style.css">
     </head>
 
-    <body>
+    <body id='challenge'>
         <div class="navbar-header">
             <a class='logo' href='index.html'><img src="images/logo.png"></a>
           	<div id="menuIcon" onclick="animateMenuIcon(this)">
@@ -34,12 +34,12 @@
                   <li class="dropdown alwaysHover">
                     <a href="challenge.html">Challenge</a>
                     <ul class="dropdown-menu">
-                      <li><a href="">Challenge</a></li>
-                      <li><a href="">Categories</a></li>
-                      <li><a href="">Judging</a></li>
-                      <li><a href="">Timeline</a></li>
-                      <li><a href="">Prizes</a></li>
-                      <li><a href="">Watch the Challenge</a></li>
+                      <li><a href="#theChallenge">Challenge</a></li>
+                      <li><a href="#categories">Categories</a></li>
+                      <li><a href="#judging">Judging</a></li>
+                      <li><a href="#timeline">Timeline</a></li>
+                      <li><a href="#prizes">Prizes</a></li>
+                      <li><a href="#watchTheChallenge">Watch the Challenge</a></li>
                     </ul>
                   </li>
                   <li class="dropdown">
@@ -51,169 +51,167 @@
             </div>
       </div><!-- /.container-fluid -->
 	    
-	    <section class='section-black mobile-padding-top'>
-	    	<div class='page-header'>
-	    		<div class='section-centering'>
-			    	<h1>Challenge</h1>
-			    	<img src='images/tiles/header1.png'>
-		    	</div>
-		    </div>
-	    </section>
+    	<div class='page-header'>
+    		<div class='section-centering'>
+		    	<h1>Challenge</h1>
+		    	<img src='images/tiles/header1.png'>
+	    	</div>
+	    </div>
 
 	    <section  class='section-blue'>
-	    	<div class='section-centering end-padding'>
-		    	<h2 class="subtitle">THE CHALLENGE</h2>
-		    	<div class='tile-with-description'>
-		    		<img src='images/tiles/tile1.png'>
-		    		<div>
-			    		<p>Technologists. Innovators. Dreamers. The Shape Challenge is an open contest to inspire, showcase, and celebrate pure technological innovation.</p>
-						<p>Have a groundbreaking technology that can augment a network? Creating tech that can make our cities smarter? Adding to the Internet of Things with an entirely new ”Thing”?</p>
-						<p>Submit your innovation today, and you’ll have the chance to win $50,000, gain buzz for your project, and pitch live on stage. For dates check the schedule.</p>
-					</div>
+	    	<div id='theChallenge' class='section-centering'>
+		    	<h2 class="subtitle">The Challenge</h2>
+		    	<div class='detail-hero'>
+		    		<div class='detail-hero-image'>
+		    			<img src='images/challenge/challenge-hero.jpg'>
+		    			<div class='detail-hero-overlay detail-hero-overlay-3'></div>
+		    		</div>
+		    		<div class='detail-hero-info'>
+			    		<p>
+						Technologists. Innovators. Dreamers. The Shape Challenge is an open contest to inspire, showcase, and celebrate pure technological innovation.
+						Have a groundbreaking technology that can augment a network? Creating tech that can make our cities smarter? Adding to the Internet of Things with an entirely new ”Thing”?
+						Submit your innovation today, and you’ll have the chance to win $50,000, gain buzz for your project, and pitch live on stage. For dates check the schedule.
+				 		</p>
+	    			</div>
 	    		</div>
-		    </div>
-
-		    <section class='section-blue section-view-schedule'>
-		    	<a class='button' href=''>Submit Your Innovation Now</a>
-		    </section>
+		    	<a class='button button-center' href=''>Submit Your Innovation Now</a>
+	    	</div>
 	    </section>
 
-	    <section class='section-white intro'>
-	    	<div class='section-centering end-padding'>
-		    	<h2 class="subtitle">CATEGORIES</h2>
-		    	<div class='categories-layout'>
-		    		<div class='category-title'><span>Augmented Networks</span></div>
-		    		<img src='images/tiles/hero-home-small.png'>
-		    	</div>
-		    	<div class='category-details'>
-		    		<div>
+
+	    <section class='section-white'>
+	    	<div id='categories' class='section-centering'>
+		    	<h2>Categories</h2>
+
+		    	<div class='challenge-category'>
+		    		<div class='challenge-category-title'>
+			    		<h3>Augmented Networks</h3>
+			    		<div class='challenge-overlay challenge-overlay-1'>
+			    		</div>
+			    	</div>
+			    	<div class='challenge-category-info'>
 		    			<p>
-		    				AT&T has a vision for a network that goes beyond connecting two points—a network with ever-growing intelligence and capabilities. And we need your help to build it.
+		    				AT&amp;T has a vision for a network that goes beyond connecting two points—a network with ever-growing intelligence and capabilities. And we need your help to build it.
 		    			</p>
+		    			<br>
+						<b>How to win:</b>
 		    			<p>
-							<span class='text-bold'>How to win:</span>
-							<span>
-								Wow us with a solution to a network or content delivery challenge, whether it’s mobile, satellite, Wi-Fi, or wireline. We’ll consider all submissions that use or contribute to AT&T technologies.
-							</span>
+							Wow us with a solution to a network or content delivery challenge, whether it’s mobile, satellite, Wi-Fi, or wireline. We’ll consider all submissions that use or contribute to AT&amp;T technologies.
 						</p>
+						<br>
+						<b>Topic examples:</b>
 						<p>
-							<span class='text-bold'>Topic examples:</span>
-							<span>
-								Software Defined Network (SDN): We’re excited to see technologies that can help us rethink how we manage network services. Micro-services: We’re looking for micro-services to enable connections across multiple containers to activate virtual network functions on an as-needed basis. Think about optimizing content delivery, improving M2M communications, or building an application distribution system.
-							</span>
+							Software Defined Network (SDN): We’re excited to see technologies that can help us rethink how we manage network services. Micro-services: We’re looking for micro-services to enable connections across multiple containers to activate virtual network functions on an as-needed basis. Think about optimizing content delivery, improving M2M communications, or building an application distribution system.
 						</p>
+						<br>
+						<b>Virtual Reality (VR) Delivery:</b>
 						<p>
-							<span class='text-bold'>Virtual Reality (VR) Delivery: </span>
-							<span>
-								We want to support and develop technologies that help with the creation, optimization, and delivery of VR content while also encouraging widespread VR adoption.
-							</span>
+							We want to support and develop technologies that help with the creation, optimization, and delivery of VR content while also encouraging widespread VR adoption.
 		    			</p>
 		    		</div>
 		    	</div>
 		    </div>
 	    </section>
 
-	    <section class='section-black intro'>
-	    	<div class='section-centering end-padding'>
-		    	<div class='categories-layout'>
-		    		<div class='category-title'><span>Connected Things</span></div>
-		    		<img src='images/tiles/header1.png'>
-		    	</div>
-		    	<div class='category-details'>
-		    		<div>
+	    <section class='section-black'>
+   	    	<div class='section-centering'>
+				<div class='challenge-category challenge-category-white'>
+		    		<div class='challenge-category-title'>
+			    		<h3>Augmented Networks</h3>
+			    		<div class='challenge-overlay challenge-overlay-2'>
+			    		</div>
+			    	</div>
+			    	<div class='challenge-category-info'>
 		    			<p>
 		    				Smartphones have been game-changers, but they represent just a fraction of the things that will keep the world around us connected. New devices and entirely new ways of experiencing tech prove we’ve only just begun. The next generation of connected things will deliver high-convenience, boundless capabilities, and an awe-inspiring vision of the future.
 		    			</p>
+		    			<br>
+						<b>How to win:</b>
 		    			<p>
-							<span class='text-bold'>How to win:</span>
-							<span>
-								Excite us with connected tech that explores new forms and unexpected functions. This new “thing” can connect through mobile, satellite, Wi-Fi, or wireline. We’ll consider submissions that use or contribute to AT&T technologies such as M2X or AT&T-certified modules.
-							</span>
+							Excite us with connected tech that explores new forms and unexpected functions. This new “thing” can connect through mobile, satellite, Wi-Fi, or wireline. We’ll consider submissions that use or contribute to AT&T technologies such as M2X or AT&T-certified modules.
 						</p>
+						<br>
+						<b>Topic examples:</b>
 						<p>
-							<span class='text-bold'>Topic examples:</span>
-							<span>
-								Smart Textiles: Connected Clothing introduces the latest technologies into everyday materials like bandages, clothing, shoes, or sportswear. We want to see innovative techniques that seamlessly weave tech into our gear.
-							</span>
+						Smart Textiles: Connected Clothing introduces the latest technologies into everyday materials like bandages, clothing, shoes, or sportswear. We want to see innovative techniques that seamlessly weave tech into our gear.
 						</p>
-						<p>
-							<span class='text-bold'>Wearables:</span>
-							<span>
-								Let’s uncover the next groundbreaking step in wearable products—big or small.
-							</span>
+						<br>
+						<b>Wearables:</b>
+						<p>						
+						Let’s uncover the next groundbreaking step in wearable products—big or small.
 		    			</p>
+						<b>Industrial Robotics:</b>
 		    			<p>
-							<span class='text-bold'>Industrial Robotics:</span>
-							<span>
-								Show us how your robotic solution augments human capabilities, or offloads mundane or dangerous tasks and activities.
-							</span>
+						Show us how your robotic solution augments human capabilities, or offloads mundane or dangerous tasks and activities.
 		    			</p>
+						<br>		    			
+						<b>Drones:</b>
 		    			<p>
-							<span class='text-bold'>Drones:</span>
-							<span>
-								Connected drones are making people’s lives easier, more convenient, and safer. Let’s find new ways to utilize this technology.
-							</span>
+						Connected drones are making people’s lives easier, more convenient, and safer. Let’s find new ways to utilize this technology.
 		    			</p>
-		    		</div>
-		    	</div>
+			    	</div>
+			    </div>
 		    </div>
 	    </section>
 
-	    <section class='section-white intro'>
-	    	<div class='section-centering end-padding'>
-		    	<div class='categories-layout'>
-		    		<div class='category-title'><span>Smart Cities</span></div>
-		    		<img src='images/tiles/hero-home-small.png'>
-		    	</div>
-		    	<div class='category-details'>
-		    		<div>
+		<section class='section-white'>
+   	    	<div class='section-centering'>
+				<div class='challenge-category '>
+		    		<div class='challenge-category-title'>
+			    		<h3>Smart Cities</h3>
+			    		<div class='challenge-overlay challenge-overlay-3'>
+			    		</div>
+			    	</div>
+			    	<div class='challenge-category-info'>
 		    			<p>
 		    				The cities of tomorrow are at the heart of a more sustainable future filled with continued economic growth and new job creation—and city leaders have taken note. Now is the time to explore how technology can be integrated for cost reductions, citizen well-being, sustainability and economic development.
 		    			</p>
+		    			<br>
+						<b>How to win:</b>
 		    			<p>
-							<span class='text-bold'>How to win:</span>
-							<span>
-								Inspire us with technology that solves for one of the countless challenges cities face. We’ll consider submissions that use or contribute to AT&T technologies like M2X and Flow Designer.
-							</span>
+							Inspire us with technology that solves for one of the countless challenges cities face. We’ll consider submissions that use or contribute to AT&T technologies like M2X and Flow Designer.
 						</p>
+						<br>
+						<b>Topic examples:</b>
+						<br>
 						<p>
-							<span class='text-bold'>Topic examples:</span>
-							<span>
-								<span>Energy & Utilities Management: </span>
-								<span>
-									From water management to smart grid and smart lighting technology, we’re looking for tech-based solutions that ensure a city’s critical resources are managed effectively.
-								</span>
-							</span>
+							Energy &amp; Utilities Management: 
+							From water management to smart grid and smart lighting technology, we’re looking for tech-based solutions that ensure a city’s critical resources are managed effectively.
 						</p>
+						<br>
+						<b>Transportation: </b>
 						<p>
-							<span class='text-bold'>Transportation: </span>
-							<span>
-								Route optimization, smart parking and metering, and connected vehicle technology are just some of the ways we can impact a city’s transportation system.
-							</span>
+							Route optimization, smart parking and metering, and connected vehicle technology are just some of the ways we can impact a city’s transportation system.
 		    			</p>
+		    			<br>
+		    			<b>Infrastructure:</b>
 		    			<p>
-							<span class='text-bold'>Infrastructure: </span>
-							<span>
-								From smart building solutions to environmental monitoring, the infrastructure of a city creates the framework for development and growth. We want to explore technologies that integrate the physical, digital, and communicative infrastructures that form a city.
-							</span>
+			    			From smart building solutions to environmental monitoring, the infrastructure of a city creates the framework for development and growth. We want to explore technologies that integrate the physical, digital, and communicative infrastructures that form a city.
 		    			</p>
 		    		</div>
 		    	</div>
 		    </div>
+		</section>
 
-		    <section class='section-white section-view-schedule'>
-		    	<a class='button' href=''>Submit Your Innovation Now</a>
-		    </section>
+	    <section class='section-white'>
+	    	<div class='section-centering'>
+		    	<a class='button button-center' href=''>Submit Your Innovation Now</a>
+		    </div>
 	    </section>
 
 	    <section  class='section-black'>
-	    	<div class='section-centering end-padding'>
-		    	<h2 class="subtitle">THE CHALLENGE</h2>
-		    	<div class='tile-with-description'>
-		    		<img src='images/tiles/tile1.png'>
-		    		<div>
+	    	<div id='watchTheChallenge' class='section-centering'>
+		    	<h2 class="subtitle">Watch The Challenge</h2>
+		    	<div class='detail-hero detail-hero-blue'>
+		    		<div class='detail-hero-image'>
+		    			<img src='images/challenge/challenge-hero.jpg'>
+		    			<div class='detail-hero-overlay detail-hero-overlay-4'></div>
+		    		</div>
+		    		<div class='detail-hero-info'>
 			    		<p>
-				    		Interested in seeing technologists, innovators, and dreamers show AT&T what the future is made of? Then attend the semi-final and final rounds of the Shape Challenge, where people with groundbreaking technologies in the areas of augmented networks, smart cities, or connected things, pitch live to a panel of judges. People had to submit their products months in advance just to earn the chance to make it to the semi-final round of the Shape Challenge. You can be there to watch as the tech of the future takes shape.
+				    		Interested in seeing technologists, innovators, and dreamers show AT&amp;T what the future is made of?
+				    		<br><br>
+				    		 Then attend the semi-final and final rounds of the Shape Challenge, where people with groundbreaking technologies in the areas of augmented networks, smart cities, or connected things, pitch live to a panel of judges. People had to submit their products months in advance just to earn the chance to make it to the semi-final round of the Shape Challenge. You can be there to watch as the tech of the future takes shape.
 						</p>
 					</div>
 	    		</div>

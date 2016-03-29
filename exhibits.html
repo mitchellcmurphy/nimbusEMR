@@ -10,7 +10,7 @@
 	    <link rel="stylesheet" href="css/style.css">
     </head>
 
-    <body>
+    <body id='exhibits'>
         <div class="navbar-header">
             <a class='logo' href='index.html'><img src="images/logo.png"></a>
           	<div id="menuIcon" onclick="animateMenuIcon(this)">
@@ -25,8 +25,8 @@
                   <li class="dropdown alwaysHover">
                     <a href="exhibits.html">Exhibits</a>
                     <ul class="dropdown-menu">
-                      <li><a href="">Overview</a></li>
-                      <li><a href="">Focus Areas</a></li>
+                      <li><a href="#overview">Overview</a></li>
+                      <li><a href="#focus-areas">Focus Areas</a></li>
                     </ul>
                   </li>
                   <li class="dropdown">
@@ -45,25 +45,23 @@
                   <li class="menu-filler"></li>
               </ul>
             </div>
-      </div><!-- /.container-fluid -->
+  	    </div><!-- /.container-fluid -->
 	    
-	    <section class='section-black mobile-padding-top'>
-	    	<div class='page-header'>
-	    		<div class='section-centering'>
-			    	<h1>Exhibits</h1>
-			    	<img src='images/tiles/header1.png'>
-		    	</div>
-		    </div>
-	    </section>
+		<div class='page-header'>
+    		<div class='section-centering'>
+		    	<h1>Exhibits</h1>
+		    	<img src='images/tiles/header1.png'>
+	    	</div>
+	    </div>
 
 	    <section  class='section-blue'>
-	    	<div class='section-centering'>
+	    	<div id='overview' class='section-centering'>
 		    	<h2>Overview</h2>
 
 		    	<div class='detail-hero'>
 		    		<div class='detail-hero-image'>
 		    			<img src='images/exhibits/hero.jpg'>
-		    			<div class='detail-hero-overlay'></div>
+		    			<div class='detail-hero-overlay detail-hero-overlay-2'></div>
 		    		</div>
 		    		<div class='detail-hero-info'>
 		    			<p>
@@ -71,12 +69,12 @@
 		    			</p>
 	    			</div>
 	    		</div>
-
+	    	<a class='button button-center' href=''>Register Now</a>	
 		    </div>
 	    </section>
 
 	    <section  class='section-black'>
-	    	<div class='section-centering'>
+	    	<div id='focus-areas' class='section-centering'>
 		    	<h2>FOCUS AREAS</h2>
 
 	    		<div class="focus-area">
