@@ -387,7 +387,7 @@ p {
     background-color: #00a3e0;
     z-index: 100;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
   }
 
   .dropdown-menu>li { 
