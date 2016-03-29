@@ -1145,7 +1145,7 @@ a.button:hover{
 
 .detail-hero-info {
 	float: left;
-	width: 540px;
+	width: 500px;
 }
 
 .detail-hero-info p, .project-info p {
@@ -1163,7 +1163,7 @@ a.button:hover{
     background-size: 100%;
 }
 
-@media (max-width: 860px){
+@media (max-width: 680px){
 	.detail-hero {
 		overflow: auto;
 		width: auto;
@@ -1202,7 +1202,7 @@ a.button:hover{
 	}
 }
 
-@media (max-width: 860px) and (min-width: 560px){
+@media (max-width: 560px){
 	.detail-hero-overlay {
     position: absolute;
     top: 0;
@@ -1231,7 +1231,7 @@ a.button:hover{
 }
 
 
-@media (max-width: 860px) and (min-width: 560px){
+@media (max-width: 760px) and (min-width: 560px){
 	.detail-hero-overlay-1 {
 		background-image: url('../images/tiles/overlay1-hd.png');
 	}
