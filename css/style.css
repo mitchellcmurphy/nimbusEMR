@@ -118,7 +118,6 @@ p {
 		}
 	}
 
-
 	.section-view-schedule {
 		text-align: center;
 		padding: 40px 0 80px 0;
@@ -407,6 +406,7 @@ p {
 		display: inline-block;
     	width: 100%;
     	position: fixed;
+    	border-bottom: 1px solid rgba(0, 159, 219, .2);
 	}
 
 	#menuIcon{
@@ -516,6 +516,9 @@ a.button:hover{
 /* Page Headers */
 
 .page-header {
+	background-color: #000;
+	overflow: hidden;
+	width: 100%;
 }
 
 .page-header h1{
@@ -534,6 +537,7 @@ a.button:hover{
 	.page-header {
 		height: 60px;
 		border-top: 1px solid rgba(0, 159, 219, .2);
+		padding-top: 60px;
 	}
 
 	.page-header h1 {
@@ -595,6 +599,10 @@ a.button:hover{
 }
 
 @media (max-width: 920px){
+	.hero-overlay {
+		top: 60px;
+	}
+
 	.intro img {
 		width: 300px;
 	}
