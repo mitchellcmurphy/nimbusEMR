@@ -33,7 +33,6 @@ h3 {
 h4 {
 	font-size: 16px; 
 	font-weight: 400;
-	padding-bottom: 10px;
 }
 
 h4 span {
@@ -41,9 +40,6 @@ h4 span {
 	width: 100%;
 }
 
-h5 {
-	color: #EA7400;
-}
 
 @media (max-width: 1015px){
 	h2{
@@ -75,10 +71,6 @@ p {
     padding-bottom: 8px;
 }
 
-.text-bold{
-	font-weight: bold;
-}
-
 .hide-element{
 	visibility: hidden;
 }
@@ -103,6 +95,181 @@ p {
 	line-height: 48px;
 	font-weight: 200;
 }
+
+/* Sections */
+
+	section{
+		overflow: hidden;
+		padding-bottom: 40px;
+	}
+	
+	.section-0-padding{
+		padding-bottom: 0
+	}
+
+	.section-centering{
+		max-width: 860px;
+		margin: 0 auto;
+	}
+
+	@media (max-width: 860px){
+		.section-centering{
+			padding: 0 20px 0 20px;
+		}
+	}
+
+
+	.section-view-schedule {
+		text-align: center;
+		padding: 40px 0 80px 0;
+	}
+
+	.section-view-register {
+		text-align: center;
+		padding: 90px 0 90px 0;
+	}
+	/* Section Blue */
+
+	.section-blue {
+		background-color: #009fdb;
+	}
+
+	.section-blue p, .section-blue h2, .section-blue h3, .section-blue h4, .section-blue a, .section-blue b, .section-blue i {
+		color: #fff;
+	}
+
+	.section-blue h3 {
+		color: #000;
+	}
+
+	.section-blue h3 {
+		color: #000;
+	}
+
+	.section-blue a{
+	}
+
+	.section-blue .button{
+		border-color: #fff;
+	}
+
+	.section-blue .button:hover{
+		color: #009fdb;
+		background-color: #fff;		
+	}
+
+	.section-black h2.subtitle-small-margin{
+		color: #ffffff;
+		text-align: left;
+		border-bottom: solid 1px #ffffff;
+		font-size: 24px;
+		padding-top: 80px;
+		margin: 0 auto 20px auto;
+	}
+
+	/* Section White */
+
+	.section-white {
+		background-color: #fff;
+	}
+
+	/* .section-white b, .section-white i {
+		color: #fff;
+	} */
+
+	.section-white p, .section-white h3 {
+		color: #000;
+	}
+
+	.section-white h2{
+		color: #000;
+		border-bottom-color: #000;
+	}
+
+	.section-white h4{
+		color: #009fdb;
+	}
+
+	.section-white a, .section-white .button{
+		border-color: #009fdb;
+	}
+
+	.section-white .button{
+		border-color:  #009fdb;
+		color:  #009fdb;
+	}
+
+	.section-white .button:hover{
+		color: #ffffff;
+		background-color:  #009fdb;		
+	}
+
+	.section-white h3.subtitle{
+		text-align: left;
+		border-bottom: solid 1px #000;
+		font-size: 24px;
+		padding-top: 80px;
+		margin: 0 auto 43px auto;
+	}
+
+	.section-white h2.subtitle{
+		text-align: left;
+		border-bottom: solid 1px #009fdb;
+		font-size: 24px;
+		margin: 0 auto 43px auto;
+	}
+
+	.section-white p.datetime-format{
+		color: #009fdb;
+	}
+
+	/* Section Black */
+
+	.section-black {
+		background-color: #000;
+	}
+
+	.section-black p, .section-black  h2, .section-black h4, .section-black  a, .section-black b, .section-black i {
+		color: #009fdb;;
+	}
+
+	.section-black h2{
+		border-bottom-color: #009fdb;;
+	}
+
+	.section-black h3 {
+		color: #fff;
+	}
+
+	.section-black a {
+	}
+
+	.section-black .button{
+		border-color: #009fdb;
+	}
+
+	/* Section Gray */
+
+	.section-gray {
+		background-color: #eeeeee;
+	}
+
+	.section-gray p, .section-gray  h2, .section-gray  a, .section-gray b, .section-gray i {
+		color: #000;
+	}
+
+	.section-gray h2{
+		border: 0;
+	}
+
+	.section-gray a {
+		color: #009fdb;
+	}
+
+	.section-gray .button{
+		border-color: #009fdb;
+	}
+
 
 /*Nav Bar Header*/
 
@@ -164,7 +331,6 @@ p {
 .navbar-full > li{
   line-height: 32px;
 }
-
 
 .navbar-full > li > a{
   display: block;
@@ -408,11 +574,6 @@ a.button:hover{
 	float: left;
 }
 
-.end-padding-small{
-	padding-bottom: 48px;
-}
-
-
 .top-padding-tiny{
 	padding-top: 35px;
 }
@@ -454,180 +615,6 @@ a.button:hover{
 	}
 }
 
-
-/* Sections */
-
-	section{
-		overflow: hidden;
-		padding-bottom: 40px;
-	}
-	
-	.section-0-padding{
-		padding-bottom: 0
-	}
-
-	.section-centering{
-		max-width: 860px;
-		margin: 0 auto;
-	}
-
-	@media (max-width: 860px){
-		.section-centering{
-			padding: 0 20px 0 20px;
-		}
-	}
-
-
-	.section-view-schedule {
-		text-align: center;
-		padding: 40px 0 80px 0;
-	}
-
-	.section-view-register {
-		text-align: center;
-		padding: 90px 0 90px 0;
-	}
-	/* Section Blue */
-
-	.section-blue {
-		background-color: #009fdb;
-	}
-
-	.section-blue p, .section-blue h2, .section-blue h3, .section-blue h4, .section-blue a, .section-blue b, .section-blue i {
-		color: #fff;
-	}
-
-	.section-blue h3 {
-		color: #000;
-	}
-
-	.section-blue h3 {
-		color: #000;
-	}
-
-	.section-blue a{
-	}
-
-	.section-blue .button{
-		border-color: #fff;
-	}
-
-	.section-blue .button:hover{
-		color: #009fdb;
-		background-color: #fff;		
-	}
-
-	.section-black h2.subtitle-small-margin{
-		color: #ffffff;
-		text-align: left;
-		border-bottom: solid 1px #ffffff;
-		font-size: 24px;
-		padding-top: 80px;
-		margin: 0 auto 20px auto;
-	}
-
-	/* Section White */
-
-	.section-white {
-		background-color: #fff;
-	}
-
-	/* .section-white b, .section-white i {
-		color: #fff;
-	} */
-
-	.section-white p, .section-white h3 {
-		color: #000;
-	}
-
-	.section-white h2{
-		color: #000;
-		border-bottom-color: #000;
-	}
-
-	.section-white h4{
-		color: #009fdb;
-	}
-
-	.section-white a, .section-white .button{
-		border-color: #009fdb;
-	}
-
-	.section-white .button{
-		border-color:  #009fdb;
-		color:  #009fdb;
-	}
-
-	.section-white .button:hover{
-		color: #ffffff;
-		background-color:  #009fdb;		
-	}
-
-	.section-white h3.subtitle{
-		text-align: left;
-		border-bottom: solid 1px #000;
-		font-size: 24px;
-		padding-top: 80px;
-		margin: 0 auto 43px auto;
-	}
-
-	.section-white h2.subtitle{
-		text-align: left;
-		border-bottom: solid 1px #009fdb;
-		font-size: 24px;
-		margin: 0 auto 43px auto;
-	}
-
-	.section-white p.datetime-format{
-		color: #009fdb;
-	}
-
-	/* Section Black */
-
-	.section-black {
-		background-color: #000;
-	}
-
-	.section-black p, .section-black  h2, .section-black h4, .section-black  a, .section-black b, .section-black i {
-		color: #009fdb;;
-	}
-
-	.section-black h2{
-		border-bottom-color: #009fdb;;
-	}
-
-	.section-black h3 {
-		color: #fff;
-	}
-
-	.section-black a {
-	}
-
-	.section-black .button{
-		border-color: #009fdb;
-	}
-
-	/* Section Gray */
-
-	.section-gray {
-		background-color: #eeeeee;
-	}
-
-	.section-gray p, .section-gray  h2, .section-gray  a, .section-gray b, .section-gray i {
-		color: #000;
-	}
-
-	.section-gray h2{
-		border: 0;
-	}
-
-	.section-gray a {
-		color: #009fdb;
-	}
-
-	.section-gray .button{
-		border-color: #009fdb;
-	}
 
 /* Tiles */
 
@@ -873,7 +860,6 @@ a.button:hover{
 	.speakers-key-tiles .speaker-key-tile:nth-of-type(even) .title:last-child{
 	border-right: solid #fff 6px;
 	}
-
 }
 
 .speakers-additional{
@@ -889,12 +875,21 @@ a.button:hover{
 	overflow: hidden;
 }
 
+.section-black .speakers-additional li{
+	border-color: rgba(255,255,255,.15);
+}
+
+.section-black .speakers-additional p{
+	color: #fff;
+	margin-top: 10px;
+}
+
 .speakers-additional li:last-child{
 	border-bottom: 0;
 }
 
 .speaker-additional-image {
-	width: 25%;
+	width: 15%;
 	float: left;
 	display: block;
 }
@@ -905,7 +900,7 @@ a.button:hover{
 }
 
 .speaker-additional-info{
-	width: 75%;
+	width: 85%;
 	float: right;
 	display: block;
 }
@@ -964,9 +959,11 @@ a.button:hover{
 
 .label-VIP{
 	background-color: black;
-    width: 80px;
-    font-size: 14px;
+    width: 60px;
+    font-size: 10px;
+    font-weight: bold;
     text-align: center;
+    padding-top: 4px;
 }
 
 .section-black .schedule-items-container p{
@@ -1126,6 +1123,7 @@ a.button:hover{
 .project-title h5{
 	position: absolute;
 	bottom: 20px;
+	color: #EA7400;
 }
 
 .project-image {
