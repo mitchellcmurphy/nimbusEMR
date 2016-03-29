@@ -1095,6 +1095,19 @@ a.button:hover{
 		margin-top: 40px;
 	}
 
+	.challenge-category-title{
+		height: auto;
+		border-bottom: 6px solid #009fdb;
+	}
+
+	.section-black .challenge-category-title{
+		border-color: #fff;
+
+	}
+	.challenge-overlay{
+		display: none;
+	}
+
 }
 
 /*Exhibit & Maker Camp Live Intros */
