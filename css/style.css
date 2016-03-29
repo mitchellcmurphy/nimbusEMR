@@ -513,6 +513,12 @@ a.button:hover{
 	background-color: #009fdb;
 }
 
+@media (max-width: 400px){
+	a.button{
+		text-align: center;
+	}
+}
+
 /* Page Headers */
 
 .page-header {
@@ -589,7 +595,9 @@ a.button:hover{
 }
 
 .intro {
-	padding: 80px 0 40px 0;
+	/*padding: 80px 0 40px 0;*/
+	padding-top: 80px;
+	padding-bottom: 40px;
 }
 
 .intro img {
@@ -606,7 +614,9 @@ a.button:hover{
 	}
 
 	.intro {
-		padding: 80px 0 40px 0;
+		/*padding: 20px 0 40px 0;*/
+		padding-top: 20px;
+		padding-bottom: 40px;
 	}
 }
 
@@ -934,6 +944,7 @@ a.button:hover{
 	display: flex;
     flex-wrap: wrap;
     padding: 22px 0 82px 0;
+    justify-content: center;
 }
 
 .sponsor-container{
@@ -1345,6 +1356,26 @@ a.button:hover{
 
 .judging-criteria-percentage p{
 	padding-left: 10px;
+}
+
+@media (max-width: 820px){
+	.prizes {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.tile-prize{
+		margin-top: 10px;
+	}
+
+	.challenge-container{
+		justify-content: center;
+	}
+
+	#judging-criteria-container{
+		flex-direction: column;
+		align-items: center;
+	}
 }
 
 /* Footer */
