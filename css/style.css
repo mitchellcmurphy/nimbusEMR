@@ -500,8 +500,15 @@ p {
 .button-center {
 	margin: 0 auto;
 	display: block;
+	width: 200px;
 	max-width: 300px;
 	text-align: center;
+}
+
+@media (max-width: 860px){
+	.button-center {
+		margin-top: 20px;
+	}
 }
 
 a.button {
@@ -1086,7 +1093,7 @@ a.button:hover{
     width: 100%;
     overflow: hidden;
     height: 306px;
-    margin-bottom: 80px;
+    margin-bottom: 40px;
 }
 
 .detail-hero-blue {
@@ -1131,9 +1138,10 @@ a.button:hover{
 
 @media (max-width: 860px){
 	.detail-hero {
-		overflow: visible;
+		overflow: auto;
 		width: auto;
 		border: 0;
+		height: auto;
 	}
 
 	.detail-hero-info{
