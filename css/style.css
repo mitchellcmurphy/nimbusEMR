@@ -25,6 +25,12 @@ h2 {
 	margin-bottom: 40px;
 }
 
+@media (max-width: 860px){
+	h2 {
+		margin-bottom: 20px;
+	}
+}
+
 h3 {
 	font-size: 20px; 
 	font-weight: 500;
@@ -1084,6 +1090,12 @@ a.button:hover{
 	padding: 20px;
 }
 
+@media (max-width: 860px){
+	.challenge-category {
+		margin-top: 40px;
+	}
+
+}
 
 /*Exhibit & Maker Camp Live Intros */
 
@@ -1144,11 +1156,15 @@ a.button:hover{
 		height: auto;
 	}
 
-	.detail-hero-info{
+	.detail-hero-info {
 		width: auto;
 		border-right: 6px solid #fff;
 		border-bottom: 6px solid #fff;
 		border-left: 6px solid #fff;
+	}
+
+	.detail-hero-blue .detail-hero-info{
+	border-color: #009fdb;
 	}
 
 	.detail-hero-image {
@@ -1217,6 +1233,10 @@ a.button:hover{
 	width: 25%;
 }
 
+.project-image img{
+	width: 100%;
+}
+
 .project-image-overlay {
 	position: absolute;
 	top: -6px;
@@ -1244,6 +1264,50 @@ a.button:hover{
 	width: 50%;
 	float: left;
     box-sizing: border-box;
+}
+
+@media (max-width: 860px){
+	.project{
+		width: 100%;
+	    height: auto;
+	    border: 6px solid #009fdb;
+	    box-sizing: border-box;
+	    margin-bottom: 40px;
+	}
+
+	.project-title{
+		float: left;
+	    width: 50%;
+	    padding: 20px;
+	    border: 0;
+	}
+
+	.project-image {
+		width: 25%;
+		float: right;
+	}
+
+	.project-info {
+		width: 100%;
+		border-top: 6px solid #009fdb;
+	}
+
+	.project-image-overlay {
+		right: -6px;
+		bottom: -10px;
+	}
+
+	.project-title h5{
+		position: relative;
+		bottom: auto;
+	}
+}
+
+@media (max-width: 560px){
+	.project-image {
+		width: 50%;
+		float: right;
+	}
 }
 
 .faq {
@@ -1314,6 +1378,25 @@ a.button:hover{
 }
 .focus-area-exhibits li span img{
 	width: 100%;
+}
+
+@media (max-width: 860px){
+	.focus-area-title{
+	width: 100%;
+	height: auto;
+    border-bottom: 6px solid #009fdb;
+    padding: 20px 0 20px 20px;
+	}
+
+	.focus-area-info{
+		margin-left: 0;
+		padding: 10px 10px 20px 0;
+		display: inline-block;
+	}
+
+	.focus-area-exhibits {
+		margin-left: 0;
+	}
 }
 
 /*Hackathon*/
