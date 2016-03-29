@@ -123,6 +123,12 @@ p {
 		padding: 40px 0 80px 0;
 	}
 
+	@media (max-width: 1110px){
+		.section-view-schedule {
+			padding-top: 0;
+		}
+	}
+
 	.section-view-register {
 		text-align: center;
 		padding: 90px 0 90px 0;
@@ -1120,6 +1126,37 @@ a.button:hover{
 	background-repeat: no-repeat;
     background-size: 100%;
 }
+
+@media (max-width: 860px){
+	.detail-hero {
+		overflow: visible;
+		width: auto;
+		border: 0;
+	}
+
+	.detail-hero-info{
+		width: auto;
+		border-right: 6px solid #fff;
+		border-bottom: 6px solid #fff;
+		border-left: 6px solid #fff;
+	}
+
+	.detail-hero-image {
+	position: relative;
+	width: auto;
+	height: auto;
+	float: none;		
+	}
+
+	.detail-hero-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+	}
+}
+
 
 .detail-hero-overlay-1 {
 	background-image: url('../images/tiles/overlay1.png');
