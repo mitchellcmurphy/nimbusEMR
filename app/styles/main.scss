@@ -1,0 +1,290 @@
+$icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+// bower:scss
+@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+// App Styling Constants
+$SiteMinWidth: 1000px;
+
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+html {
+  font-family: Helvetica Neue, Arial, sans-serif;
+}
+
+body {
+  padding: 0;
+  min-width: $SiteMinWidth;
+}
+
+/*Globals*/
+.padding-bottom{
+  padding-bottom: 100px;
+}
+
+.highlighted {
+  background: yellow
+}
+
+.centerAlign{
+  text-align: center;
+}
+
+.rightAlign{
+  text-align: right;
+}
+
+.rounded-button-blue{
+  background: #2266A3;
+  color: #A7BBCD;
+  border-style: none;
+  border-radius: 15px;
+  width: 100px;
+  height: 30px;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Custom page header */
+.header {
+  position: relative;
+  background: #515151;
+  height: 60px;
+  border-bottom: 1px solid #e5e5e5;
+  margin-bottom: 10px;
+  min-width: $SiteMinWidth;
+
+  #logo {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+  }
+
+  #title {
+    position: absolute;
+    width: 100%;
+    font-size: 32px;
+    color: #ffffff;
+    text-align: center;
+    top: 5px;
+  }
+
+
+  #logout-container,
+  #user-container {
+    position: absolute;
+    right: 25px;
+    top: 10px;
+    cursor: pointer;
+
+    i, a {
+      font-size: 14px;
+      color: #A6D5F7;
+      font-weight: bold;
+    }
+    i {
+      font-size: 18px;
+    }
+  }
+
+  #logout-container {
+    top: 32px;
+    right: 50px;
+  }
+
+  /* Make the masthead heading the same height as the navigation */
+  h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 40px;
+    padding-bottom: 19px;
+  }
+}
+
+/* Custom page footer */
+.footer {
+  height: 60px;
+  color: #458CCC;
+  font-size: 12px;
+  border-top: 1px solid #e5e5e5;
+  background-color: rgba(51, 51, 51, 1);
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: table;
+
+  &>div{
+    display: table-cell;
+    vertical-align: middle;
+  }
+}
+
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+.footer .container{
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  top: 35%;
+
+  a{
+    color: #458CCC;
+    padding-right: 10px;
+    padding-top: 5px;
+
+    &:hover{
+      color: white;
+      text-decoration: none;
+    }
+  }
+
+  p{
+    padding-top: 5px;
+  }
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+
+  .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+  }
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0;
+
+  p + h4 {
+    margin-top: 28px;
+  }
+}
+
+/* Responsive: Portrait tablets and up */
+//@media screen and (min-width: 768px) {
+//
+//  /* Remove the padding we set earlier */
+//  .header,
+//  .marketing,
+//  .footer {
+//    padding-left: 0;
+//    padding-right: 0;
+//  }
+//  /* Space out the masthead */
+//  .header {
+//    margin-bottom: 30px;
+//  }
+//  /* Remove the bottom border on the jumbotron for visual effect */
+//  .jumbotron {
+//    border-bottom: 0;
+//  }
+//}
+
+/* Packages Table Styling */
+table {
+  border-radius: 5px;
+
+  thead {
+    td {
+      background: #000;
+      a, a:hover {
+        &.selected {
+          color: #ED7711;
+        }
+        color: #fff;
+        font-size: 18px;
+      }
+    }
+  }
+
+  tbody{
+    td{
+      vertical-align: middle !important;
+    }
+  }
+}
+
+.panel > .table:first-child > thead:first-child > tr:first-child td:first-child {
+  border-top-left-radius: 5px;
+}
+
+.panel > .table:first-child > thead:first-child > tr:first-child td:last-child {
+  border-top-right-radius: 5px;
+}
+
+.panel.panel-default {
+  border-radius: 6px;
+  border-width:2px;
+  margin-bottom: 5px;
+}
+
+.color-green {
+  color: #009900;
+}
+
+.color-orange {
+  color: #E8944C;
+}
+
+#table-definitions {
+  margin-right: 20px;
+}
+
+.rowExpanded {
+  background: #84BCDD;
+}
+
+.manually-assign{
+  cursor: pointer;
+}
+
+.modal-content{
+  position: absolute;
+  top: 174px;
+  width: 580px;
+  color: #FFFFFF;
+  background-color: rgba(0, 0, 0, 0.776470588235294);
+  font-size: 12px;
+  border: 20px solid rgba(0, 0, 0, 0.298039215686275)
+}
+
+.modal-text-input{
+  color: #448CCB;
+  width: 200px;
+  background-color: #C3E9FF;
+  font-family: 'Open Sans Regular', 'Open Sans';
+  font-weight: 400;
+  font-style: normal;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.modal-title{
+  font-weight: 600;
+  font-style: normal;
+  font-size: 14px;
+}
+
+#assign-button{
+  border: none;
+  color: #E5E5E5;
+  background-color: rgba(237, 119, 17, 1);
+  text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.647058823529412)
+}
