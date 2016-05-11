@@ -59,7 +59,7 @@ angular.module('nimbusEmrApp')
     $routeProvider
       .when('/test', {
         templateUrl: 'views/test.html',
-        controller: 'MainCtrl'
+        controller: 'TestCtrl'
       })
       //.whenAuthenticated('/test', {
       //  templateUrl: 'views/test.html',
