@@ -8766,29 +8766,27 @@ body {
 /* line 60, ../../app/styles/main.scss */
 .header {
   position: relative;
-  background: #515151;
+  background: #33E6FA;
   height: 60px;
   border-bottom: 1px solid #e5e5e5;
-  margin-bottom: 10px;
   min-width: 1000px;
   /* Make the masthead heading the same height as the navigation */
 }
-/* line 68, ../../app/styles/main.scss */
+/* line 67, ../../app/styles/main.scss */
 .header #logo {
   position: absolute;
   top: 10px;
   left: 20px;
 }
-/* line 74, ../../app/styles/main.scss */
+/* line 73, ../../app/styles/main.scss */
 .header #title {
   position: absolute;
   width: 100%;
   font-size: 32px;
   color: #ffffff;
-  text-align: center;
   top: 5px;
 }
-/* line 84, ../../app/styles/main.scss */
+/* line 82, ../../app/styles/main.scss */
 .header #logout-container,
 .header #user-container {
   position: absolute;
@@ -8796,7 +8794,7 @@ body {
   top: 10px;
   cursor: pointer;
 }
-/* line 91, ../../app/styles/main.scss */
+/* line 89, ../../app/styles/main.scss */
 .header #logout-container i, .header #logout-container a,
 .header #user-container i,
 .header #user-container a {
@@ -8804,17 +8802,17 @@ body {
   color: #A6D5F7;
   font-weight: bold;
 }
-/* line 96, ../../app/styles/main.scss */
+/* line 94, ../../app/styles/main.scss */
 .header #logout-container i,
 .header #user-container i {
   font-size: 18px;
 }
-/* line 101, ../../app/styles/main.scss */
+/* line 99, ../../app/styles/main.scss */
 .header #logout-container {
   top: 32px;
   right: 50px;
 }
-/* line 107, ../../app/styles/main.scss */
+/* line 105, ../../app/styles/main.scss */
 .header h3 {
   margin-top: 0;
   margin-bottom: 0;
@@ -8823,7 +8821,7 @@ body {
 }
 
 /* Custom page footer */
-/* line 116, ../../app/styles/main.scss */
+/* line 114, ../../app/styles/main.scss */
 .footer {
   height: 60px;
   color: #458CCC;
@@ -8836,164 +8834,95 @@ body {
   width: 100%;
   display: table;
 }
-/* line 128, ../../app/styles/main.scss */
+/* line 126, ../../app/styles/main.scss */
 .footer > div {
   display: table-cell;
   vertical-align: middle;
 }
 
-/* line 134, ../../app/styles/main.scss */
+/* line 132, ../../app/styles/main.scss */
 .container-narrow > hr {
   margin: 30px 0;
 }
 
-/* line 138, ../../app/styles/main.scss */
+/* line 136, ../../app/styles/main.scss */
 .footer .container {
   display: flex;
   justify-content: space-between;
   position: relative;
   top: 35%;
 }
-/* line 144, ../../app/styles/main.scss */
+/* line 142, ../../app/styles/main.scss */
 .footer .container a {
   color: #458CCC;
   padding-right: 10px;
   padding-top: 5px;
 }
-/* line 149, ../../app/styles/main.scss */
+/* line 147, ../../app/styles/main.scss */
 .footer .container a:hover {
   color: white;
   text-decoration: none;
 }
-/* line 155, ../../app/styles/main.scss */
+/* line 153, ../../app/styles/main.scss */
 .footer .container p {
   padding-top: 5px;
 }
 
 /* Main marketing message and sign up button */
-/* line 161, ../../app/styles/main.scss */
+/* line 159, ../../app/styles/main.scss */
 .jumbotron {
   text-align: center;
   border-bottom: 1px solid #e5e5e5;
 }
-/* line 165, ../../app/styles/main.scss */
+/* line 163, ../../app/styles/main.scss */
 .jumbotron .btn {
   font-size: 21px;
   padding: 14px 24px;
 }
 
-/* Supporting marketing content */
-/* line 172, ../../app/styles/main.scss */
-.marketing {
-  margin: 40px 0;
-}
-/* line 175, ../../app/styles/main.scss */
-.marketing p + h4 {
-  margin-top: 28px;
-}
-
-/* Responsive: Portrait tablets and up */
-/* Packages Table Styling */
-/* line 201, ../../app/styles/main.scss */
-table {
-  border-radius: 5px;
-}
-/* line 205, ../../app/styles/main.scss */
-table thead td {
-  background: #000;
-}
-/* line 207, ../../app/styles/main.scss */
-table thead td a, table thead td a:hover {
-  color: #fff;
-  font-size: 18px;
-}
-/* line 208, ../../app/styles/main.scss */
-table thead td a.selected, table thead td a:hover.selected {
-  color: #ED7711;
-}
-/* line 218, ../../app/styles/main.scss */
-table tbody td {
-  vertical-align: middle !important;
-}
-
-/* line 224, ../../app/styles/main.scss */
-.panel > .table:first-child > thead:first-child > tr:first-child td:first-child {
-  border-top-left-radius: 5px;
-}
-
-/* line 228, ../../app/styles/main.scss */
-.panel > .table:first-child > thead:first-child > tr:first-child td:last-child {
-  border-top-right-radius: 5px;
-}
-
-/* line 232, ../../app/styles/main.scss */
-.panel.panel-default {
-  border-radius: 6px;
-  border-width: 2px;
-  margin-bottom: 5px;
-}
-
-/* line 238, ../../app/styles/main.scss */
+/* line 169, ../../app/styles/main.scss */
 .color-green {
   color: #009900;
 }
 
-/* line 242, ../../app/styles/main.scss */
+/* line 173, ../../app/styles/main.scss */
 .color-orange {
   color: #E8944C;
 }
 
-/* line 246, ../../app/styles/main.scss */
-#table-definitions {
-  margin-right: 20px;
+/* line 177, ../../app/styles/main.scss */
+#label-table {
+  width: 100%;
+}
+/* line 180, ../../app/styles/main.scss */
+#label-table td {
+  border: 1px solid black;
+  height: 30px;
+  width: 30px;
 }
 
-/* line 250, ../../app/styles/main.scss */
-.rowExpanded {
-  background: #84BCDD;
+/* line 187, ../../app/styles/main.scss */
+#vitals-table {
+  border-collapse: collapse;
+  text-align: center;
+}
+/* line 191, ../../app/styles/main.scss */
+#vitals-table td {
+  border: 1px solid black;
+  height: 30px;
+  width: 30px;
 }
 
-/* line 254, ../../app/styles/main.scss */
-.manually-assign {
-  cursor: pointer;
+/* line 198, ../../app/styles/main.scss */
+.titles-container {
+  height: 100vh;
+  width: 50vh;
+  background: lightblue;
 }
 
-/* line 258, ../../app/styles/main.scss */
-.modal-content {
-  position: absolute;
-  top: 174px;
-  width: 580px;
-  color: #FFFFFF;
-  background-color: rgba(0, 0, 0, 0.7764705882);
-  font-size: 12px;
-  border: 20px solid rgba(0, 0, 0, 0.2980392157);
+/* line 204, ../../app/styles/main.scss */
+.vitals-container {
+  height: 100vh;
+  width: 224vh;
+  background: lightgoldenrodyellow;
 }
-
-/* line 268, ../../app/styles/main.scss */
-.modal-text-input {
-  color: #448CCB;
-  width: 200px;
-  background-color: #C3E9FF;
-  font-family: 'Open Sans Regular', 'Open Sans';
-  font-weight: 400;
-  font-style: normal;
-  font-size: 12px;
-  text-decoration: none;
-}
-
-/* line 279, ../../app/styles/main.scss */
-.modal-title {
-  font-weight: 600;
-  font-style: normal;
-  font-size: 14px;
-}
-
-/* line 285, ../../app/styles/main.scss */
-#assign-button {
-  border: none;
-  color: #E5E5E5;
-  background-color: #ed7711;
-  text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.6470588235);
-}
-
-/*# sourceMappingURL=main.css.map */

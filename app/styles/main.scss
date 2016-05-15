@@ -59,10 +59,9 @@ body {
 /* Custom page header */
 .header {
   position: relative;
-  background: #515151;
+  background: #33E6FA;
   height: 60px;
   border-bottom: 1px solid #e5e5e5;
-  margin-bottom: 10px;
   min-width: $SiteMinWidth;
 
   #logo {
@@ -76,7 +75,6 @@ body {
     width: 100%;
     font-size: 32px;
     color: #ffffff;
-    text-align: center;
     top: 5px;
   }
 
@@ -168,73 +166,6 @@ body {
   }
 }
 
-/* Supporting marketing content */
-.marketing {
-  margin: 40px 0;
-
-  p + h4 {
-    margin-top: 28px;
-  }
-}
-
-/* Responsive: Portrait tablets and up */
-//@media screen and (min-width: 768px) {
-//
-//  /* Remove the padding we set earlier */
-//  .header,
-//  .marketing,
-//  .footer {
-//    padding-left: 0;
-//    padding-right: 0;
-//  }
-//  /* Space out the masthead */
-//  .header {
-//    margin-bottom: 30px;
-//  }
-//  /* Remove the bottom border on the jumbotron for visual effect */
-//  .jumbotron {
-//    border-bottom: 0;
-//  }
-//}
-
-/* Packages Table Styling */
-table {
-  border-radius: 5px;
-
-  thead {
-    td {
-      background: #000;
-      a, a:hover {
-        &.selected {
-          color: #ED7711;
-        }
-        color: #fff;
-        font-size: 18px;
-      }
-    }
-  }
-
-  tbody{
-    td{
-      vertical-align: middle !important;
-    }
-  }
-}
-
-.panel > .table:first-child > thead:first-child > tr:first-child td:first-child {
-  border-top-left-radius: 5px;
-}
-
-.panel > .table:first-child > thead:first-child > tr:first-child td:last-child {
-  border-top-right-radius: 5px;
-}
-
-.panel.panel-default {
-  border-radius: 6px;
-  border-width:2px;
-  margin-bottom: 5px;
-}
-
 .color-green {
   color: #009900;
 }
@@ -243,48 +174,35 @@ table {
   color: #E8944C;
 }
 
-#table-definitions {
-  margin-right: 20px;
+#label-table{
+  width: 100%;
+
+  td {
+    border: 1px solid black;
+    height: 30px;
+    width: 30px;
+  }
 }
 
-.rowExpanded {
-  background: #84BCDD;
+#vitals-table{
+  border-collapse: collapse;
+  text-align: center;
+
+  td {
+    border: 1px solid black;
+    height: 30px;
+    width: 30px;
+  }
 }
 
-.manually-assign{
-  cursor: pointer;
+.titles-container{
+  height: 100vh;
+  width: 50vh;
+  background: lightblue;
 }
 
-.modal-content{
-  position: absolute;
-  top: 174px;
-  width: 580px;
-  color: #FFFFFF;
-  background-color: rgba(0, 0, 0, 0.776470588235294);
-  font-size: 12px;
-  border: 20px solid rgba(0, 0, 0, 0.298039215686275)
-}
-
-.modal-text-input{
-  color: #448CCB;
-  width: 200px;
-  background-color: #C3E9FF;
-  font-family: 'Open Sans Regular', 'Open Sans';
-  font-weight: 400;
-  font-style: normal;
-  font-size: 12px;
-  text-decoration: none;
-}
-
-.modal-title{
-  font-weight: 600;
-  font-style: normal;
-  font-size: 14px;
-}
-
-#assign-button{
-  border: none;
-  color: #E5E5E5;
-  background-color: rgba(237, 119, 17, 1);
-  text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.647058823529412)
+.vitals-container{
+  height: 100vh;
+  width: 224vh;
+  background: lightgoldenrodyellow;
 }

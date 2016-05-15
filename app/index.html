@@ -25,19 +25,9 @@
       <span id="title">
         nimbus EMR
       </span>
-      <span id="user-container">
-        <i class="fa fa-user" aria-hidden="true"></i>
-        <a href="#/">User Name</a>
-      </span>
-      <span id="logout-container">
-        <i class="fa fa-sign-out" aria-hidden="true"></i>
-        <a ng-click="logout()">Logout</a>
-      </span>
     </div>
 
-    <div class="container padding-bottom">
-      <div ng-view=""></div>
-    </div>
+    <div ng-view></div>
 
     <div class="footer">
       <div>
@@ -90,6 +80,8 @@
         <script src="scripts/controllers/login.js"></script>
         <script src="scripts/controllers/modal.js"></script>
         <script src="scripts/controllers/test.js"></script>
+        <script src="scripts/controllers/session.js"></script>
+        <script src="scripts/services/vitals-sim.js"></script>
         <script src="scripts/directives/ngShowAuth.js"></script>
         <script src="scripts/directives/ngHideAuth.js"></script>
         <script src="scripts/routes.js"></script>
