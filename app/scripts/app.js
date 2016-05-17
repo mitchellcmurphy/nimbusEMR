@@ -32,5 +32,11 @@ angular
             //TODO: Replace the url when this service opens
             apiPath: '/where-ever-packages-comes-from',
         });
-    });
+    })
+    .constant('VITALS_CONFIG', [
+        {name: 'hr', unit: 'bpm', max: 190, min: 85},
+        {name: 'sp02', unit: '%', max: 100, min: 85},
+        {name: 'etc02', unit: '%', max: 100, min: 85},
+        {name: 'resp', unit: 'bpm', max: 20, min: 1}
+    ]);
 ;
