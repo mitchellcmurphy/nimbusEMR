@@ -13,47 +13,32 @@ angular.module('nimbusEmrApp')
     .factory('VitalsSim', ['$rootScope', '$interval', '$firebaseArray',
         function ($rootScope, $interval, $firebaseArray) {
             var stop;
+            var vitalsData = [
+                {name: 'hr', unit: 'bpm', max: 190, min: 85},
+                {name: 'sp02', unit: '%', max: 100, min: 85},
+                {name: 'etc02', unit: '%', max: 100, min: 85},
+                {name: 'resp', unit: 'bpm', max: 20, min: 1}
+            ];
+            //var vitalsArray = [];
             var vitals = {
                 startDemo: function (firebaseRef) {
                     var userid = "user1";
-                    //hr
-                    var hrRef = firebaseRef.child(userid + '/vitals/hr');
-                    var hr = $firebaseArray(hrRef);
-                    //sp02
-                    var sp02Ref = firebaseRef.child(userid + '/vitals/sp02');
-                    var sp02 = $firebaseArray(sp02Ref);
-                    //etc02
-                    var etc02Ref = firebaseRef.child(userid + '/vitals/etc02');
-                    var etc02 = $firebaseArray(etc02Ref);
-                    //resp
-                    var respRef = firebaseRef.child(userid + '/vitals/resp');
-                    var resp = $firebaseArray(respRef);
-
+                    //Set the ref for each vital
+                    angular.forEach(vitalsData, function(vital){
+                        var ref = firebaseRef.child(userid + '/vitals/' + vital.name);
+                        vital.ref = $firebaseArray(ref);
+                    });
+                    //Start our interval
                     stop = $interval(function () {
-                        hr.$add(
-                            {
-                                value: Math.floor((Math.random() * 190) + 85),
-                                unitOfMeasure: 'bpm'
-                            }
-                        );
-                        sp02.$add(
-                            {
-                                value: Math.floor((Math.random() * 100) + 85),
-                                unitOfMeasure: '%'
-                            }
-                        );
-                        etc02.$add(
-                            {
-                                value: Math.floor((Math.random() * 100) + 85),
-                                unitOfMeasure: '%'
-                            }
-                        );
-                        resp.$add(
-                            {
-                                value: Math.floor((Math.random() * 20) + 1),
-                                unitOfMeasure: 'bpm'
-                            }
-                        );
+                        //Add data into the firebase array for each vital
+                        //Set with a min, max, and unit
+                        angular.forEach(vitalsData, function(vital){
+                           vital.ref.$add (
+                               {
+                                   value: Math.floor((Math.random() * vital.max) + vital.min),
+                                   unitOfMeasure: vital.unit
+                               });
+                        });
                     }, 1000);
                 },
                 stopDemo: function(){
