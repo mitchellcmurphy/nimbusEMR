@@ -11,7 +11,7 @@ angular.module('nimbusEmrApp')
     .controller('SessionController', ['$rootScope', '$scope', '$interval', 'Auth', 'Ref', 'VitalsSim', '$firebaseArray',
         function ($rootScope, $scope, $interval, Auth, Ref, VitalsSim, $firebaseArray) {
 
-            var mapValues = function(id){
+            $scope.mapValues = function(id){
                 switch (id){
                     case 'hr':
                         return 'Heart Rate';
@@ -33,7 +33,7 @@ angular.module('nimbusEmrApp')
             $firebaseArray(vitalsRef).$loaded().then(function(vitals){
                 angular.forEach(vitals, function(value, key) {
                     var vital = {
-                        name: mapValues(vitals.$keyAt(key)),
+                        name: $scope.mapValues(vitals.$keyAt(key)),
                         values: value
                     };
                     $scope.vitals.push(vital);

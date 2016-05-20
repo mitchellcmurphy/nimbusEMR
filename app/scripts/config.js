@@ -2,6 +2,6 @@
 
  angular.module('config', [])
 
-.constant('MockData', false)
+.constant('MockData', true)
 
 ;

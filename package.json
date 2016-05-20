@@ -58,5 +58,6 @@
     "smoke-tests": "grunt test",
     "lint": "jshint .",
     "validate": "npm ls"
-  }
+  },
+  "pre-commit": ["test"]
 }
