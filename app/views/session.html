@@ -1,17 +1,8 @@
 <div style="display: inline-flex">
     <div class="titles-container">
         <table id="label-table">
-            <tr>
-                <td>Heart Rate</td>
-            </tr>
-            <tr>
-                <td>SP02</td>
-            </tr>
-            <tr>
-                <td>ETC02</td>
-            </tr>
-            <tr>
-                <td>Respiration</td>
+            <tr ng-repeat="vital in vitals">
+                <td>{{vital.name}}</td>
             </tr>
         </table>
         <button style="margin-top: 20px" ng-click="startSim()">Start Sim</button>
@@ -20,24 +11,9 @@
     </div>
     <div class="vitals-container">
         <table id="vitals-table">
-            <tr>
-                <td ng-repeat="hr in hr">
-                    {{hr.value}}
-                </td>
-            </tr>
-            <tr>
-                <td ng-repeat="sp02 in sp02">
-                    {{sp02.value}}
-                </td>
-            </tr>
-            <tr>
-                <td ng-repeat="etc02 in etc02">
-                    {{etc02.value}}
-                </td>
-            </tr>
-            <tr>
-                <td ng-repeat="resp in resp">
-                    {{resp.value}}
+            <tr ng-repeat="vital in vitals">
+                <td ng-repeat="value in vital.values">
+                    {{value.value}}
                 </td>
             </tr>
         </table>
