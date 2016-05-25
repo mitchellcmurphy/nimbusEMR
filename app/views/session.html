@@ -1,0 +1,21 @@
+<div style="display: inline-flex">
+    <div class="titles-container">
+        <table id="label-table">
+            <tr ng-repeat="vital in vitals">
+                <td>{{vital.name}}</td>
+            </tr>
+        </table>
+        <button style="margin-top: 20px" ng-click="startSim()">Start Sim</button>
+        <button style="margin-top: 20px" ng-click="stopSim()">Stop Sim</button>
+        <button style="margin-top: 20px" ng-click="clearData()">Clear Data</button>
+    </div>
+    <div class="vitals-container">
+        <table id="vitals-table">
+            <tr ng-repeat="vital in vitals">
+                <td ng-repeat="value in vital.values">
+                    {{value.value}}
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
